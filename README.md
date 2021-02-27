@@ -2,6 +2,8 @@
 
 ## This repository contains the lessons and quizzes from Cloud Developer Using Microsoft Azure Nanodegree Program.
 
+## The first part corresponds to the material provided during the first phase of the scholarship.
+
 # LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT:
 
 ## Prerequisites:
