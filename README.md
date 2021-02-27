@@ -592,26 +592,26 @@ In this exercise, you'll create and connect to a Linux Virtual Machine in Azure.
 <strong>Prerequisite:</strong> If you're using Windows, you’ll need PowerShell or Bash to connect to the VM with ssh. Windows 10 should already have Powershell installed. If you don't have it already installed, here is a guide on how to install it.
 
 * 1. Create a Linux VM called “linux-vm-west” inside “resource-group-west” which was created in a previous exercise. The VM should have the following configurations:
-* VM Name: "linux-vm-west"
-* Region: West US or the closest region to you that's available
-* Availability Options: No infrastructure redundancy required.
-* Image: Ubuntu Server (any version)
-* Azure Spot instance: No
-* Size: Standard B1ls
-* Authentication type: Password
-* Username: (any username you choose)
-* Password: (any password you choose)
-* Inbound Port Rules: Allow both 22 and 80
+>> * VM Name: "linux-vm-west"
+>> * Region: West US or the closest region to you that's available
+>> * Availability Options: No infrastructure redundancy required.
+>> * Image: Ubuntu Server (any version)
+>> * Azure Spot instance: No
+>> * Size: Standard B1ls
+>> * Authentication type: Password
+>> * Username: (any username you choose)
+>> * Password: (any password you choose)
+>> * Inbound Port Rules: Allow both 22 and 80
 
-* 2. After creating the VM, use secure copy to copy the web directory from here to the VM. scp -r ./web <USERNAME>@<IPADDRESS>:/home/<USERNAME>
-* 3. After copying the files to the VM, connect to it and run the command ls to check the web directory is on the VM.
-* 4. Next, install python3-env and nginx sudo apt-get -y update && sudo apt-get -y install nginx python3-venv
+* 2. After creating the VM, use <strong>secure copy</strong> to copy the ```web``` directory from [here](https://video.udacity-data.com/topher/2020/July/5f1875e2_create-vm-starter/create-vm-starter.zip) to the VM. ```scp -r ./web <USERNAME>@<IPADDRESS>:/home/<USERNAME>```
+* 3. After copying the files to the VM, <strong>connect</strong> to it and run the command ```ls``` to check the ```web``` directory is on the VM.
+* 4. Next, install ```python3-env``` and ```nginx``` ```sudo apt-get -y update && sudo apt-get -y install nginx python3-venv```
 * 5. Next, configure nginx to listen for incoming traffic on port 80 and set port 3000 as the proxy.
->> * Navigate to /etc/nginx/sites-avaiable
->> * Remove the default file
+>> * Navigate to ```/etc/nginx/sites-avaiable```
+>> * Remove the ```default``` file
 >> * Replace it with a file containing:
 
-server {
+```server {
   listen 80;
   location / {
       proxy_pass http://localhost:3000;
@@ -622,6 +622,7 @@ server {
       proxy_cache_bypass $http_upgrade;
   }
 }
+```
 
 * After saving the file, restart nginx ```sudo service nginx restart```
 * 6. Change to the ```web``` directory and create and activate a virtual env
