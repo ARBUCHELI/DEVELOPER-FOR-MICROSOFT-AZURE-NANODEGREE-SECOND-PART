@@ -676,21 +676,22 @@ Alternatively, you can check the screenshot below for the same approach through 
 * 1. We'll need the admin username we set when creating the VM
 * 2. We'll need the public IP address of our VM. You can use the following command to grab the IP address for a particular VM from the CLI.
 ```az vm list-ip-addresses -g resource-group-west -n linux-vm-west```
-* 3. Next we're going to copy a basic Flask app from my local machine to the VM. We'll be using the secure copy utility. ```scp -r ./web udacityadmin@IPADDRESS:/home/udacityadmin```
-* 4. Now we can connect to the VM with “ssh [username]@[IP Address]” Note: Since we generated SSH keys, you won't be prompted for a password.
-* 5. Run ls to see the web directory we just uploaded
+* 3. Next we're going to copy a basic Flask app from my local machine to the VM. We'll be using the [secure copy utility](http://www.hypexr.org/linux_scp_help.php) ```scp -r ./web udacityadmin@IPADDRESS:/home/udacityadmin```
+* 4. Now we can connect to the VM with “ssh [username]@[IP Address]” <strong>Note:</strong> Since we generated SSH keys, you won't be prompted for a password.
+* 5. Run ```ls``` to see the web directory we just uploaded
 * 6. Python 3 is already installed on the VM. We'll install Python Virtual Environment and NGNIX to use as a reverse proxy
 ```sudo apt-get -y update && sudo apt-get -y install nginx python3-venv```
 * 7. Before we run the app, we have to configure Nginx to redirect all incoming connections on port 80 to our app that is running on localhost port 3000
 
 >> * By default, Nginx has a default page that is displayed. If you visit the public IP address in your browser, you should see this page rendered.
->> * We'll navigate to the /etc/nginx/sites-available directory—
+>> * We'll navigate to the <strong>/etc/nginx/sites-available</strong> directory—
 ```cd /etc/nginx/sites-available```
 >> * We’ll first unlink the default site using ```sudo unlink /etc/nginx/sites-enabled/default```
->> * Then we’ll create a new file reverse-proxy.conf in /etc/nginx/sites-available—
+>> * Then we’ll create a new file <strong>reverse-proxy.conf</strong> in <strong>/etc/nginx/sites-available—</strong>
 ```sudo vim reverse-proxy.conf```
 >> * We're going to add the following code to this file:
 
+```
 server {
     listen 80;
     location / {
@@ -702,10 +703,12 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
  }
+ ```
  
-* 8. Now we’ll activate the directories by creating a sym link to the /sites-enabled directory 
+* 8. Now we’ll activate the directories by creating a sym link to the <strong>/sites-enabled</strong> directory 
 ```sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf```
->> * We have to restart nginx so the changes take effect. ```sudo service nginx restart```
+>> * We have to restart nginx so the changes take effect
+```sudo service nginx restart```
 
 ### Deploying the App to the VM
 This section is the same as the earlier walkthrough, so we'll skip a solution video for it.
