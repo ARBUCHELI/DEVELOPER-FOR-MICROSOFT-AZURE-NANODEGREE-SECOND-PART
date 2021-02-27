@@ -563,7 +563,7 @@ Now we’ll activate the directories by creating a sym link to the /sites-enable
 
 * 9. Create venv ```python3 -m venv venv```
 * 10. Activate the env ```source venv/bin/activate```
-* 11. Upgrade pip in our virtual environment and then Install dependencies ```pip install --upgrade pip pip install -r requirements.txt```
+* 11. Upgrade pip in our virtual environment and then Install dependencies ```pip install --upgrade pip``` ```pip install -r requirements.txt```
 * 12. We'll run our app ```python application.py```
 * 13. In a web browser, we can visit the public IP address of the VM and you should see the application
 * 14. Type "exit" to disconnect from the VM
