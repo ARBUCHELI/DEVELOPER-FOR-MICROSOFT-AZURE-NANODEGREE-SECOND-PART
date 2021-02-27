@@ -529,11 +529,11 @@ sudo apt-get -y update && sudo apt-get -y install nginx python3-venv
 
 * By default, Nginx has a default page that is displayed. If you visit the public IP address in your browser, you should see this page rendered.
 * We'll navigate to the <strong>/etc/nginx/sites-available</strong> directory—
-```cd /etc/nginx/sites-available
-```
+```cd /etc/nginx/sites-available```
+
 * We’ll first unlink the default site using 
-```sudo unlink /etc/nginx/sites-enabled/default
-```
+```sudo unlink /etc/nginx/sites-enabled/default```
+
 * Then we’ll create a new file <strong>reverse-proxy.conf</strong> in the <strong>/etc/nginx/sites-available</strong>—
 <strong>sudo vim reverse-proxy.conf</strong>
 * We're going to add the following code to this file:
