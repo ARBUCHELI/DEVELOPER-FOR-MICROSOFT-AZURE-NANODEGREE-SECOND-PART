@@ -450,7 +450,7 @@ The answer here depends greatly on which of the above points you highlight. In t
 
 ## Creating a Virtual Machine
 
-Please watch the video to follow the tutorial:
+Please open the link on a new tab to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=ngD-D9XBPw4&feature=emb_logo)
 
