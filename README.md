@@ -721,7 +721,7 @@ To deploy the app on the virtual machine, I did the following:
 * 4. Upgrade pip in our virtual environment and then Install dependencies—
 ```pip install --upgrade pip pip install -r requirements.txt```
 * 5. We'll run our app ```python application.py```
-* 6. In a web browser, we can visit the publicIpaddress
+* 6. In a web browser, we can visit the public Ip address
 * 7. Type "exit" to disconnect from the VM
 
 ### Cleanup
