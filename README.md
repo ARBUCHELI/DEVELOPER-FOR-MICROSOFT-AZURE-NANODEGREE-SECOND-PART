@@ -211,7 +211,7 @@ What did we learn in this introductory lesson on Azure Cloud Development?
 * <strong>On-Premises</strong>	The non-cloud option where companies host all their necessary compute, storage and other resources on-site.
 * <strong>Infrastructure as a Service (Iaas)</strong>	Removes the expense of up-front costs of hardware, software and test environments, as the cloud provider is instead responsible for providing physical hardware.
 * <strong>Platform as a Service (Paas)</strong>	Handles networking, provides middleware and development & database tools, in addition to the physical hardware provided at the IaaS level.
-* Software as a Service (Saas)</strong>	Provides end-users access to online cloud solutions, without the need to build or support the underlying applications themselves.
+* <strong>Software as a Service (Saas)</strong>	Provides end-users access to online cloud solutions, without the need to build or support the underlying applications themselves.
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
