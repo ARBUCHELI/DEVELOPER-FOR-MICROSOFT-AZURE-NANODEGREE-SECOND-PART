@@ -303,6 +303,10 @@ In this exercise, you'll create a resource group in Azure. This is a quick exerc
 
 ## Solution (Alternative Solution using the CLI)
 
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
+
 ### Steps to Create a Resource Group using the Azure CLI:
 
 * 1. Log in using az login.
