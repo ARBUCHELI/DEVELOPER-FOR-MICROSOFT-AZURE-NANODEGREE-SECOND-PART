@@ -289,7 +289,7 @@ You'll practice this yourself in the upcoming exercise.
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/28.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/29.jpg)
 
-Please watch the video to follow the tutorial:
+Please open the link in a second tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/23.jpg)](https://www.youtube.com/watch?v=_9nHPP0gixc&feature=emb_logo)
 
@@ -303,7 +303,7 @@ In this exercise, you'll create a resource group in Azure. This is a quick exerc
 
 ## Solution (Alternative Solution using the CLI)
 
-Please watch the video to follow the tutorial:
+Please open the link in a second tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
 
@@ -324,7 +324,7 @@ Alternatively, you can check out the screenshot below for how you might do the s
 
 ![](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)
 
-Please watch the video to follow the tutorial:
+Please open the link in a second tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
 
