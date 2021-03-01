@@ -729,6 +729,13 @@ If we no longer need a resource, we can delete them through the portal. The quic
 
 ```az group delete -n resource-group-west```
 
+## Creating an App Service
+
+Please open the video in a new tab to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=C4B4Ebchf0U&feature=emb_logo)
+
+
 _________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
