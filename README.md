@@ -667,7 +667,7 @@ az vm open-port \
     --name "linux-vm-west"
     
 * 5. Upon success, you will receive a JSON response.
-* 
+
 Alternatively, you can check the screenshot below for the same approach through the portal.
 
 ![](https://video.udacity-data.com/topher/2020/July/5f075463_linux-vm-solution/linux-vm-solution.png)
