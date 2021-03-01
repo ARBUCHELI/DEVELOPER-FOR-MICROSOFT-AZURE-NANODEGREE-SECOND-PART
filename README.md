@@ -778,24 +778,6 @@ If we no longer need a resource, we can delete them through the portal.
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/50.jpg)
 
-
-_________________________________________________________________________________________________________________________________________________________________________________
-# GLOSSARY 
-
-### Reverse Proxy:
-In computer networks such as the internet, a reverse proxy is a common type of proxy server that is accessible from the public network. Large websites and content delivery networks use reverse proxies –together with other techniques– to balance the load between internal servers. Reverse proxies can keep a cache of static content, which further reduces the load on these internal servers and the internal network. It is also common for reverse proxies to add features such as compression or TLS encryption to the communication channel between the client and the reverse proxy.
-
-### Unit Testing:
-In computer programming, unit testing is a software testing method by which individual units of source code—sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures—are tested to determine whether they are fit for using.
-
-### Integration Testing: 
-Is the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements.  It occurs after unit testing and before validation testing.
-
-### Content Management System: 
-A content management system, often abbreviated as CMS, is software that helps users create, manage, and modify content on a website without the need for specialized technical knowledge.
-In simpler language, a content management system is a tool that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
-Instead of building your own system for creating web pages, storing images, and other functions, the content management system handles all that basic infrastructure stuff for you so that you can focus on more forward-facing parts of your website.
-
 ## Exercise: Creating an App Service
 
 ### Create and Deploy an App Service Web App
@@ -825,6 +807,34 @@ It’s finally time to deploy some code to Azure! Download the web app code prov
 * 1. Create a new repo and push the web app code to the repo
 * 2. On Azure portal in the Deployment Center, deploy the web app from GitHub
 * 3. Navigate to the deployed URL
+
+## Solution: Creating an App Service
+
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=GOieycrud0Q&feature=emb_logo)
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________
+# GLOSSARY 
+
+### Reverse Proxy:
+In computer networks such as the internet, a reverse proxy is a common type of proxy server that is accessible from the public network. Large websites and content delivery networks use reverse proxies –together with other techniques– to balance the load between internal servers. Reverse proxies can keep a cache of static content, which further reduces the load on these internal servers and the internal network. It is also common for reverse proxies to add features such as compression or TLS encryption to the communication channel between the client and the reverse proxy.
+
+### Unit Testing:
+In computer programming, unit testing is a software testing method by which individual units of source code—sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures—are tested to determine whether they are fit for using.
+
+### Integration Testing: 
+Is the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements.  It occurs after unit testing and before validation testing.
+
+### Content Management System: 
+A content management system, often abbreviated as CMS, is software that helps users create, manage, and modify content on a website without the need for specialized technical knowledge.
+In simpler language, a content management system is a tool that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
+Instead of building your own system for creating web pages, storing images, and other functions, the content management system handles all that basic infrastructure stuff for you so that you can focus on more forward-facing parts of your website.
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
