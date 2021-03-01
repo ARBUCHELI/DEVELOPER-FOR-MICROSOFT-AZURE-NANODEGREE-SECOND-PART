@@ -735,7 +735,31 @@ Please open the video in a new tab to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=C4B4Ebchf0U&feature=emb_logo)
 
+I took the following steps to create an App Service Web App using the Azure Portal
 
+* 1. On the homepage, click "Create a resource"
+* 2. Search for "Web App"
+* 3. Click "Create"
+* 4. Select your subscription
+* 5. Select your resource group "resource-group-west"
+* 6. Enter a name for your web app—This needs to be a unique name and is unique to Azure as a whole and not just your Azure account. I used "hello-world1234" as my unique name.
+* 7. For Publish, select "Code"
+* 8. For the "Runtime Stack", select "Python 3.7" or greater.
+* 9. For the "Operating System" select "Linux"
+* 10. Select a region for your app service
+* 11. Create a new App Service Plan. You can keep the default name Azure gives you or you can create your own name.
+* 12. For SKU and size, select "F1" (Free).
+* 13. Click "Review + Create"
+* 14. Click "Create"
+* 
+Then, I clicked on the URL to see the app service, which confirmed the app service was up and running. Now we need to deploy our code.
+
+<strong>Note:</strong> Azure free account only allows 1 Linux App Service of size F1. You will need to delete the App Service Web App along with the App Service Plan after each exercise since we will create other Linux App Services throughout this course.
+
+Please open the video in a new tab to follow the tutorial:
+
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/49.jpg)](https://www.youtube.com/watch?time_continue=4&v=bpME7sOhPNg&feature=emb_logo)
 _________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
