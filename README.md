@@ -760,6 +760,25 @@ Please open the video in a new tab to follow the tutorial:
 
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/49.jpg)](https://www.youtube.com/watch?time_continue=4&v=bpME7sOhPNg&feature=emb_logo)
+
+To deploy an App Service from a GitHub repository, I did the following:
+
+* 1. Go to Deployment Center
+* 2. Choose GitHub
+* 3. Choose org and repo
+* 4. Go through the prompts; deployment takes a few minutes
+* 5. Go to URL of web app and should see the app deployed
+
+### Cleanup
+If we no longer need a resource, we can delete them through the portal.
+
+* 1. From the homepage, click on "Resource Group".
+* 2. Click on the resource group you want to manage.
+* 3. You have two options—"Delete resource group" or if you want to keep the resource group, you can click on the individual or collection of resources you want to delete and click on "Delete".
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/50.jpg)
+
+
 _________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
