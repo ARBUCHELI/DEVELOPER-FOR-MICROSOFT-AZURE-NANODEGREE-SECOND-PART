@@ -796,7 +796,35 @@ A content management system, often abbreviated as CMS, is software that helps us
 In simpler language, a content management system is a tool that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
 Instead of building your own system for creating web pages, storing images, and other functions, the content management system handles all that basic infrastructure stuff for you so that you can focus on more forward-facing parts of your website.
 
+## Exercise: Creating an App Service
 
+### Create and Deploy an App Service Web App
+In this exercise, you'll create and deploy an app service web app.
+
+### Prerequisites:
+
+* A GitHub Account. If you don’t have one, create one [here](https://github.com/).
+
+### Create an App Service Web App
+Create an App Service Web App with the following configuration:
+
+* Resource-Group: resource-group-west
+* Web App Name: unique name
+* Publish: Code
+* Runtime stack: Python 3.7
+* Operating System: Linux
+* Region: West US or the closest region to you
+* App Service Plan: Default name or Create new with a name of your choice
+* SKU and size: F1 (Free)
+
+<strong>Note:</strong> Azure free account only allows one Linux App Service of size F1. You will need to delete the App Service along with the App Service Plan after this exercise since we will create other Linux App Services throughout this course.
+
+### Deploy the App Service Web App
+It’s finally time to deploy some code to Azure! Download the web app code provided [here](https://video.udacity-data.com/topher/2020/July/5f18767d_create-app-service-starter/create-app-service-starter.zip).
+
+* 1. Create a new repo and push the web app code to the repo
+* 2. On Azure portal in the Deployment Center, deploy the web app from GitHub
+* 3. Navigate to the deployed URL
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
