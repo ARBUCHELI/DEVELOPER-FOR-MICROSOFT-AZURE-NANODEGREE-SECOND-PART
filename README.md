@@ -814,7 +814,62 @@ Please watch the video to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=GOieycrud0Q&feature=emb_logo)
 
+In this solution video, I showed you an alternative way to create and deploy an Azure App Service Web App using Azure CLI. Use whichever method you feel more comfortable with moving forward.
 
+### Steps to Create and Deploy an App Service Web App from a Directory using Azure CLI:
+
+* 1. Sign in to Azure ```az login```
+* 2. cd to ```web``` directory
+* 3. Run the following command:
+
+```
+az webapp up \
+ --resource-group resource-group-west \
+ --name hello-world1234 \
+ --sku F1 \
+ --verbose
+ ```
+ 
+* 4. If you visit the URL, you should see your site deployed.
+* 5. If you want to update your app, make changes to your code and then run (<strong>Note:</strong> this may not update new requirements you may have added):
+
+```
+az webapp up \
+ --name hello-world1234 \
+ --verbose
+ ```
+ 
+ Alternatively, you can create the initial web app from the Portal as shown in the below screenshot (and then deploy code to it separately, as shown in the earlier video).
+ 
+ ![](https://video.udacity-data.com/topher/2020/July/5f07555b_app-service-solution/app-service-solution.png)
+ 
+### Cleanup
+If we no longer need a resource, we can delete them through the portal. The quickest way to do this from the CLI is to delete the resource group. This will delete all resources in that group
+
+```az group delete -n resource-group-west```
+
+Alternatively, if you want to just delete the App Service and App Service plan individually, you can do so with the following commands:
+
+### Delete an App Service
+
+```
+az webapp delete \
+    --name hello-world1234 \
+    --resource-group resource-group-west
+```
+
+### Delete an App Service plan
+
+```
+az appservice plan delete \
+    --name [App Service Plan Name] \
+    --resource-group resource-group-west
+```
+
+### QUIZ QUESTION
+You've built a web app, and deployed it with az webapp up, but seem to be getting an ImportError when actually trying to access the application. What change do you need to make to the app for it to work?
+
+* Add the related library to requirements.txt and update the deployed app
 
 
 _________________________________________________________________________________________________________________________________________________________________________________
