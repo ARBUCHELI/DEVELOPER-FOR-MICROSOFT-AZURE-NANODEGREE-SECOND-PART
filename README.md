@@ -871,7 +871,42 @@ You've built a web app, and deployed it with az webapp up, but seem to be gettin
 
 * Add the related library to requirements.txt and update the deployed app
 
+## Lesson Conclusion
 
+In this lesson, we focused on Azure Compute Services:
+
+* We took a look at some of the various compute options available
+* Then, we discussed subscriptions and resource groups, and you created your own resource group
+* From there, we took a deeper dive into two compute services in Azure: Virtual Machines and App Services
+* After comparing and contrasting these two, you created both resources and deployed an app to them
+
+### Glossary 
+
+### Key Term          Definition
+
+<strong>Subscription</strong>	Multiple of these can exist within a single Azure account; often used for billing and other management purposes.
+
+<strong>Resource Group</strong>	Help to organize resources you use, such as Virtual Machines, App Services or storage, in order to make resource management easier. Groups are often set up for different projects or regions.
+
+<strong>Region</strong>	Locations of Azure data centers around the world. The closer the region of app resources is to the end user, the lower the latency experienced.
+
+<strong>ARM Templates</strong>	Created within Azure Resource Manager to more easily spin up a set of given resources multiple times.
+
+<strong>Virtual Machines</strong>	An Azure IaaS option giving you full access to the underlying operating system of a compute resource. These can be either Windows or Linux machines, with great availability, scalability and redundancy. These require more on-going maintenance and up-keep by cloud developers.
+
+<strong>App Service</strong>	An Azure PaaS option allowing developers to focus more on their apps than the underlying infrastructure. It is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It supports multiple languages and continuous deployment. While they are good for scaling, there is also a limit of up to 14 GB or 4 CPU cores on the highest tier.
+
+<strong>App Service Plan</strong>	Contains certain settings of an App Service, such as region, number of VM instances (App Services still run on VMs, but the developer does not have control of the underlying VM, and the app may share the VM with other apps), size of those instances, and pricing tier.
+
+<strong>Azure Batch</strong>	Used for running large-scale and high-performance compute applications beyond the capabilities of an App Service.
+
+<strong>Azure Functions</strong>	A serverless, event-driven, compute-on-demand platform (covered in a later course).
+
+<strong>Container Instances</strong>	A platform for deploying serverless docker containers (covered in a later course), without the container orchestration provided by AKS (see below).
+
+<strong>Service Fabric</strong>	Microsoft's own distributed systems platform, similar to Kubernetes.
+
+<strong>Azure Kubernetes Service (AKS)</strong> Microsoft's own platform for hosting and managing Kubernetes, including deploying docker containers into clusters (covered in a later course).
 _________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
