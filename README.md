@@ -953,9 +953,36 @@ True or False: My app will only ever use one type of storage.
 
 * False
 
+## Azure SQL Databases
 
+* Azure SQL databases are used for structured, relational data.
+* In Azure, you also need to first create a related SQL server to hold the database, although you can create multiple SQL databases under a single SQL server.
+* Azure SQL databases do not have a free tier option like we saw with App Services earlier; however, when you sign up for a new free Azure account, you get 12 months of up to 250GB of Azure SQL database storage. The lowest tier is currently ~$5 / month otherwise for a small amount of storage.
 
+### Creating an Azure SQL Database in the Portal
 
+Please watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=eZHNDuYasj8&feature=emb_logo)
+
+To create an Azure SQL Database in the Azure Portal:
+
+* 1. Find the "SQL databases" service in Azure.
+* 2. Click "Create SQL Database".
+* 3. Select the appropriate subscription and resource group (likely “resource-group-west”).
+* 4. Enter a database name.
+* 5. If you already have a SQL server, you can use it; however, you likely need to click "Create New".
+>> * If creating a new SQL server, enter a server name, and then admin and password - make sure you can remember these, or you will not be able to access the server when necessary. The admin name cannot just be "admin".
+>> * Set the location to match the resource group.
+* 6. Keep SQL elastic pool on the default of "No".
+* 7. Under Compute+Storage, click on "Configure Database". While General Purpose won't end up charging you anything for the short time the server is live for these exercises, you might as well press "Looking for basic, standard, premium?", and change it to "Basic".
+* 8. Press the "Next: Networking" button, then select "Public Endpoint", and set both of the Firewall rules that appear to "Yes". This will allow us to more easily access the SQL database later on within our app.
+* 9. Click "Review + Create" and then "Create" to create the database, then wait for it to deploy.
+
+### QUIZ QUESTION
+Azure SQL Databases can be left up on the basic tier for no cost forever.
+
+* False
 
 
 
