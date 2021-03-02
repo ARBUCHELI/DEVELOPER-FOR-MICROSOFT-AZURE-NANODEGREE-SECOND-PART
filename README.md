@@ -289,7 +289,7 @@ You'll practice this yourself in the upcoming exercise.
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/28.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/29.jpg)
 
-Please open the link in a second tab to watch the tutorial:
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/23.jpg)](https://www.youtube.com/watch?v=_9nHPP0gixc&feature=emb_logo)
 
@@ -303,7 +303,7 @@ In this exercise, you'll create a resource group in Azure. This is a quick exerc
 
 ## Solution (Alternative Solution using the CLI)
 
-Please open the link in a second tab to watch the tutorial:
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
 
@@ -324,7 +324,7 @@ Alternatively, you can check out the screenshot below for how you might do the s
 
 ![](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)
 
-Please open the link in a second tab to watch the tutorial:
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
 
@@ -450,7 +450,7 @@ The answer here depends greatly on which of the above points you highlight. In t
 
 ## Creating a Virtual Machine
 
-Please open the link on a new tab to follow the tutorial:
+Please open the link in a new tab to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=ngD-D9XBPw4&feature=emb_logo)
 
@@ -486,7 +486,7 @@ The steps I took to create a Linux Virtual Machine on Azure were:
 
 ### Connect and deploy an App using the command line:
 
-Please watch the video to follow the tutorial:
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?time_continue=20&v=Ty_ZR_E6Ukg&feature=emb_logo)
 
@@ -637,7 +637,7 @@ Once you're done with the exercise, be sure to delete the VM and it's resources 
 
 ## Solution: Creating a Virtual Machine
 
-Please watch the video to follow the tutorial:
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=a5gKkVARnXU&feature=emb_logo)
 
@@ -731,7 +731,7 @@ If we no longer need a resource, we can delete them through the portal. The quic
 
 ## Creating an App Service
 
-Please open the video in a new tab to follow the tutorial:
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=C4B4Ebchf0U&feature=emb_logo)
 
@@ -756,8 +756,7 @@ Then, I clicked on the URL to see the app service, which confirmed the app servi
 
 <strong>Note:</strong> Azure free account only allows 1 Linux App Service of size F1. You will need to delete the App Service Web App along with the App Service Plan after each exercise since we will create other Linux App Services throughout this course.
 
-Please open the video in a new tab to follow the tutorial:
-
+Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/49.jpg)](https://www.youtube.com/watch?time_continue=4&v=bpME7sOhPNg&feature=emb_logo)
 
@@ -810,7 +809,7 @@ It’s finally time to deploy some code to Azure! Download the web app code prov
 
 ## Solution: Creating an App Service
 
-Please watch the video to follow the tutorial:
+Please open the video in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=GOieycrud0Q&feature=emb_logo)
 
@@ -961,7 +960,7 @@ True or False: My app will only ever use one type of storage.
 
 ### Creating an Azure SQL Database in the Portal
 
-Please watch the video to follow the tutorial:
+Please watch the video in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=eZHNDuYasj8&feature=emb_logo)
 
@@ -983,6 +982,30 @@ To create an Azure SQL Database in the Azure Portal:
 Azure SQL Databases can be left up on the basic tier for no cost forever.
 
 * False
+
+## Adding Data to the Database
+
+Please watch the video in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=nOqbJ-HTicQ&feature=emb_logo)
+
+To add data to the SQL Database, I performed the following:
+
+* 1. Once the SQL database is deployed, click on its name to access it (you may need to go back to the main "SQL databases" page in Azure).
+* 2. Click on the "Query editor" in the left side menu, and then log in with my SQL Server credentials.
+* 3. I pasted the query from my ```posts-table-init.sql``` script into the query window, and hit "Run"; you should see ```Query succeeded: Affected rows: 3```.
+* 4. On the left side of the query window, I clicked on the "Tables" folder, and double-checked that the ```dbo.POSTS``` table was successfully created with the correct fields.
+* 5. I ran a new query with ```SELECT * FROM posts```, to see the three posts listed.
+
+You'll get to practice this yourself in the upcoming exercise.
+
+### QUIZ QUESTION
+Which of the following would be appropriate data to store in a SQL database?
+
+* Information about books like author, title, year published, and summary
+* Sales invoices, such as id, price, and item quantities
+
+
 
 
 
