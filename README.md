@@ -907,6 +907,76 @@ In this lesson, we focused on Azure Compute Services:
 <strong>Service Fabric</strong>	Microsoft's own distributed systems platform, similar to Kubernetes.
 
 <strong>Azure Kubernetes Service (AKS)</strong> Microsoft's own platform for hosting and managing Kubernetes, including deploying docker containers into clusters (covered in a later course).
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+# LEESON 3 AZURE STORAGE
+
+## Introduction
+
+In this lesson, you will:
+
+* Take a look at all the different storage options available in Azure and their benefits
+* Take a deep dive on Azure SQL Databases and Blob Storage, including creating the related resources and uploading data
+* Connect those storage services to your app
+
+![](https://video.udacity-data.com/topher/2020/July/5f10a6f7_course-outline-storage/course-outline-storage.png)
+
+# Big Picture: Storage
+
+Some of the benefits of using Azure for storage are:
+
+* Automated backup and recovery
+* An option to replicate data at multiple data centers worldwide to help prevent outages from unplanned events, such as hardware failure.
+* Data analytics support
+* Data encryption for added security
+* Support for the storage of multiple data types. Azure is designed to hold 3 main types data—relational data, non-relational data or NoSQL data, and unstructured data such as images.
+* Scale up or scale out when demand is high and scale back when demand is low.
+* Eliminate the expense of having to purchase, install, configure, and maintain on premises hardware.
+
+### Azure Storage Options
+Among others, some of the Azure Storage options are:
+
+* Azure SQL Server and SQL Database
+* Azure Blob Storage
+* Azure CosmosDB
+* Disk Storage
+* Azure Data Lake Storage
+* HPC Cache
+
+We could spend an entire course just on Azure storage, so we’ll focus on two of these services in this lesson—Azure SQL Database and Azure Blob Storage. CosmosDB will be covered in another course.
+
+We also covered the three tiers of blob storage - hot, cool and archive. We'll come back to this later in the section on Azure Blob Storage.
+
+### QUIZ QUESTION
+True or False: My app will only ever use one type of storage.
+
+* False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 _________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
