@@ -1015,6 +1015,98 @@ In this exercise, you will create an Azure SQL Database and add data to it. In a
 
 <strong>Note:</strong> Azure free accounts only allow 250GB of free storage using SQL Databases. Once you get to the end of this lesson, you will want to delete the SQL Database and SQL Server to avoid incurring any charges, as you'll create a different SQL Database in the final course project.
 
+## Solution: Azure SQL Databases
+
+Please open the video in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=xyfZkpSg2bs&feature=emb_logo)
+
+In this solution video, I showed you an alternative way to create an Azure SQL Database using Azure CLI.
+
+### Create SQL Server
+
+```
+az sql server create \
+--admin-user udacityadmin \
+--admin-password p@ssword1234 \
+--name hello-world-server \
+--resource-group resource-group-west \
+--location westus2 \
+--enable-public-network true \
+--verbose
+```
+### Create Firewall rule
+
+Next, we have to create two firewall rules. These are the same two rules we checked as yes when we used the portal.
+
+The first one is to allow Allow Azure services and resources to access the server we just created.
+
+```
+az sql server firewall-rule create \
+-g resource-group-west \
+-s hello-world-server \
+-n azureaccess \
+--start-ip-address 0.0.0.0 \
+--end-ip-address 0.0.0.0 \
+--verbose
+```
+This second rule is to set your computer's public Ip address to the server's firewall. You'll need to find your computer's public ip address for this part.
+
+I'm using macOS, so I used the command ```curl ifconfig.me```; you can use ```ipconfig``` in the command prompt if you are on Windows.
+
+### Create clientIp firewall rule
+
+```
+az sql server firewall-rule create \
+-g resource-group-west \
+-s hello-world-server \
+-n clientip \
+--start-ip-address <PUBLIC-IP-ADDRESS> \
+--end-ip-address <PUBLIC_IP_ADDRESS> \
+--verbose
+```
+
+### Create SQL Database
+Finally, to create the database itself, I used the below command.
+
+```
+az sql db create \
+--name hello-world-db \
+--resource-group resource-group-west \
+--server hello-world-server \
+--tier Basic \
+--verbose
+```
+
+### Adding Data
+We'll again add data to the database through the portal, as that's the most straightforward method for now (until we connect to an app).
+
+
+Please open the video in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=C6nP7JAozDM&feature=emb_logo)
+
+### Cleanup
+You can find the CLI commands for cleaning up the SQL resources below.
+
+### Delete DB
+
+```
+az sql db delete \
+--name hello-world-db \
+--resource-group resource-group-west \
+--server hello-world-server \
+--verbose
+```
+
+### Delete SQL Server
+
+```
+az sql server delete \
+--name hello-world-server \
+--resource-group resource-group-west \
+--verbose
+```
 
 
 
