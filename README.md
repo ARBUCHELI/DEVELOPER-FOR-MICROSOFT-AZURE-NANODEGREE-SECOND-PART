@@ -1005,7 +1005,15 @@ Which of the following would be appropriate data to store in a SQL database?
 * Information about books like author, title, year published, and summary
 * Sales invoices, such as id, price, and item quantities
 
+## Exercise: Azure SQL Databases
 
+### Exercise: Azure SQL Databases
+In this exercise, you will create an Azure SQL Database and add data to it. In a later exercise, you will connect an app to the database, so that you can both get and post data from the app into the database.
+
+* 1. Deploy a SQL Database in Azure called “database-west” to the “resource-group-west” resource group (or whichever resource group you have been using in earlier exercises).
+* 2. Within the Azure portal, add the data from the script in the sql_scripts directory here to the database. You should be able to run a SELECT query afterward on the animals table to see the example animals populated in your database.
+
+<strong>Note:</strong> Azure free accounts only allow 250GB of free storage using SQL Databases. Once you get to the end of this lesson, you will want to delete the SQL Database and SQL Server to avoid incurring any charges, as you'll create a different SQL Database in the final course project.
 
 
 
