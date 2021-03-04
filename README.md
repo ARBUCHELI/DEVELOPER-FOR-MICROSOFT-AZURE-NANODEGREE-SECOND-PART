@@ -1195,6 +1195,8 @@ In this exercise, you will create a Storage Account with a Blob Container capabl
 
 ### Solution: Blob Storage
 
+Please open the video in a new tab to watch the tutorial:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=0fpwGAA0BFw&feature=emb_logo)
 
 In this solution video, I showed you an alternative way to create an Azure Storage Account and a Storage Container using Azure CLI.
@@ -1225,6 +1227,8 @@ Lastly, I also showed you how to set up a new lifecycle management rule for an a
 
 ## Connecting Your App to Storage
 
+Please open the video in a new tab to watch the tutorial:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=4n_L0OlldXc&feature=emb_logo)
 
 To connect an app to the storage we've set up, we need a few things from each storage service.
@@ -1245,6 +1249,8 @@ From blob storage:
 In our case, we're keeping the management of these values a bit simpler with a config.py file that will be imported into the primary app file.
 
 ### Azure Storage Blob Library for Python
+
+Please open the video in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/53.jpg)](https://www.youtube.com/watch?v=Fra5C7MdRGc&feature=emb_logo)
 
@@ -1316,11 +1322,97 @@ While it's not a required part of this exercise, you can also try to deploy the 
  
 * Check [here](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/install-microsoft-odbc-driver-sql-server-macos?view=sql-server-ver15&viewFallbackFrom=sql-server-ver15%3FWT.mc_id%3Dudacity_learn-wwl) to add SQL Server drivers for Mac. [This StackOverflow](https://stackoverflow.com/questions/44527452/cant-open-lib-odbc-driver-13-for-sql-server-sym-linking-issue) post may also help resolve certain issues.
   
+ ## Solution: Connecting Your App to Storage
+ 
+ Please open the video in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=7Wev-BXDovs&feature=emb_logo)
   
+Since the steps to test the app locally and deploy it are the same as the previous lesson, I will skip those here, and just focus on connecting the app to storage.
+
+### To connect with the SQL Database:
+
+* 1. Within ```config.py```, fill out the:
+>> * ```SQL_SERVER``` with the URL of your SQL Server, e.g. ```{YOUR-SQL_SERVER}.database.windows.net```
+>> * ```SQL_DATABASE``` with the name of your SQL Database
+>> * ```SQL_USER_NAME``` with the username for your SQL Server
+>> * ```SQL_PASSWORD``` with the password for your SQL Server
+
+### To connect to the Blob Storage Container:
+
+* 1. Within ```config.py```, fill out the:
+>> ```BLOB_ACCOUNT``` with the name of your storage account (above the container level)
+>> ```BLOB_STORAGE_KEY``` with the primary access key for your storage account. From the Azure portal, navigate to the storage account, and then under "Setting", click on "Access keys". Copy and paste the "Key" under "key1", including the double equal signs ("==") at the end.
+>> ```BLOB_CONTAINER``` with the name of your blob container, likely ```images```
+
+* 2. Within ```models.py```, you'll need to use the ```BlobServiceClient``` called ```blob_service``` to get a Blob Client using the container name and related filename, and then either upload or delete the blob as follows:
   
-  
-  
-  
+```
+ try:
+     blob_client = blob_service.get_blob_client(container=blob_container, blob=filename)
+     blob_client.upload_blob(file)
+     if self.image_path: # Get rid of old image, since it's replaced
+         blob_client = blob_service.get_blob_client(container=blob_container, blob=self.image_path)
+         blob_client.delete_blob()
+```
+### Why to Use a Random Filename
+You might be wondering why a random filename was chosen for our blob upload. Well, let's say you've created an app, and uploaded a ```tiger.png``` file to it. You give access to some of your friends to add more animals to it, and as a joke, they upload a picture of an elephant under the name ```tiger.png``` as well. Your original tiger image would be deleted and replaced.
+
+Even outside of a friendly joke, it's quite likely as your app scales up to thousands (and hopefully millions!) of users, they will be uploading files with the same names as others, if you don't randomize them. With unique, random filenames, you won't have to worry about this issue.
+
+## Lesson Conclusion
+
+In this lesson, you:
+
+* Took a look at all the different storage options available in Azure and their benefits
+* Took a deep dive on Azure SQL Databases and Blob Storage, including creating the related resources and uploading data
+* Connected those storage services to your app
+
+## Glossary
+
+### Key Term                    Definition
+<strong>Azure SQL Server</strong>	Azure SQL Databases must first have a SQL Server on which the database will be created. Multiple databases can be created on a single server.
+
+<strong>Azure SQL Database</strong>	Used for storing structured, relational data.
+
+<strong>Blob</strong>	A data type that can store unstructured (binary) data, and is used to store things like images or videos in a database. Blob is short for Binary Large Object.
+
+<strong>Storage Account</strong>	This is the highest level of storage hierarchy for data objects like blobs, files, queues, and tables.
+
+<strong>Container</strong>	A level of the storage hierarchy that helps organize blobs, such as splitting between image and video blobs. There can be multiple containers to one storage account.
+
+<strong>Blob Storage</strong>	Use only for storing blob data.
+
+<strong>Table Storage</strong>	Stores structured, non-relational data.
+
+<strong>File Storage</strong>	Utilized for file sharing storage solutions.
+
+<strong>Disk Storage</strong>	Utilized for disk-based storage, such as hard drive and solid-state memory disks.
+
+<strong>Data Lake Storage</strong>	Utilized for data lakes used in big data analytics.
+
+<strong>Hot Storage</strong>	Used for storing frequently accessed data.
+
+<strong>Cool Storage</strong>	Used for storing infrequently accessed data and stored for at least 30 days.
+
+<strong>Archive Storage</strong>	Used for storing data that will be rarely accessed and stored for at least 180 days. Access time latency may be very high.
+
+<strong>HPC Cache</strong>	A cache used for faster access to certain data used for high performance compute, while leaving the rest of large datasets in other storage options.
+
+<strong>CosmosDB</strong>	Azure's non-relational database service, capable of using different non-relational databases like MongoDB and Cassandra (covered in a later course).
+
+<strong>Retention</strong>	How long to store a given piece of data or file for, such as 30 days.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   
   
 
