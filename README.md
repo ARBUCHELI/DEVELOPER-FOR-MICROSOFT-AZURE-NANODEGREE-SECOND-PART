@@ -1107,10 +1107,81 @@ az sql server delete \
 --resource-group resource-group-west \
 --verbose
 ```
+## Blob Storage
 
+Before discussing Blob Storage Accounts, you may need to know what a <strong>Blob</strong> is in the first place.
 
+A <strong>Binary Large Object</strong> or <strong>Blob</strong> is a data type that can store unstructured (binary) data and is used to store things like images or videos in a database. Blobs are not the go-to choice when it comes to structured data that is queried frequently, such as user profile information. They have higher latency than memory and local disk and don't have the indexing features that make databases efficient at running queries. Blobs are commonly used in combination with databases to store non-queryable data, such as a profile picture for a user's profile. Each user record in the database would include the URL of the blob containing the user's photo.
 
+### Azure Storage Accounts
+An Azure storage account can store data objects you create, such as blobs and files. This storage account provides a unique namespace in Azure for your data, and every item that you store has an address that includes your unique account name. It’s worth noting the name of the storage account can contain only lowercase letters and numbers.
 
+In this course, you'll mostly utilize General-purpose v2 storage accounts, which provide support and the latest features for Azure Storage services such as blobs, Data Lake Gen2, Files, Disks, Queues, and Tables. This type of storage account is recommended for most scenarios when using Azure Storage services.
+
+Storage accounts can contain multiple blob containers within them, such as "images" and "movies" containers, to organize different data files. From there, each container can have many blobs inside of them (the files themselves).
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/51.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/52.jpg)
+
+![](https://video.udacity-data.com/topher/2020/July/5f10b31c_blob-storage-hierarchy/blob-storage-hierarchy.png)
+
+### Blob Storage Lifecycle
+In an earlier video, we discussed blob storage tiers—hot, cold, and archive. These are set based on how frequently data will be accessed, with hot accessed the most frequently, with relatedly lower latency for requests, but higher costs.
+
+Blob storage offers a rule-based policy you can use to transition your data between these tiers to optimize performance and cost. This is shown again in the below graphic - while your blobs may start in a Hot container, they could be moved to a Cool container if they have not been modified in the past 30 days. From there, if they have not been modified in 90 days, they could be transitioned to Archive storage; you could then perhaps delete them after a year of non-usage.
+
+![](https://video.udacity-data.com/topher/2020/July/5f10b341_blob-storage-lifecycle/blob-storage-lifecycle.png)
+
+### QUESTION 1 OF 2
+True or False: Blob Storage and SQL Databases can be used interchangeably.
+False
+
+## Creating Blob Storage in the Portal
+
+Please open the video in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=9-ZCMnrULsk&feature=emb_logo)
+
+To create a blob storage account on Azure Portal, I did the following:
+
+### Create a Storage Account in Azure:
+
+* 1. Click Create a resource
+* 2. Search for storage account
+* 3. Select the appropriate subscription and resource group (likely “resource-group-west”).
+* 4. Enter a storage account name, note—it can only be lowercase letters and numbers. “helloworld1234”
+* 5. Set the location to West US 2 to match the resource group.
+* 6. Leave "Performance" as Standard, while making sure "Account kind" is StorageV2. This could also be BlobStorage, but StorageV2 is preferred.
+* 7. We’ll leave replication on the default setting
+* 8. Set "Access tier" to Cool - in a live production app, you may need this to be Hot, but in our case, Cool will work just fine.
+* 9. Click "Next: Networking" to confirm that the storage account is using a Public endpoint (all networks)
+* 10. Click "Next: Data Protection", "Next: Advanced", then set "Blob public access" to "Enabled".
+* 11. Click "Review + Create" and then "Create" to create the database, then wait for it to deploy.
+
+### To add a Blob Container called images:
+
+* 1. Once the Storage account is deployed, click on its name to access it (you may need to go back to the main "Storage accounts" page in Azure).
+* 2. Click on the "Containers" button in the storage account's "Overview" page.
+* 3. Click "+ Container", then add the name of ```images```.
+* 4. Set "Public access level" to Container, and click "Create".
+
+<strong>NOTE:</strong> I had to refresh my page a few times before I could access the container.
+
+### Adding Images to the Container
+To add an image to the Blob Container:
+
+* 1. Click on the container named ```images```.
+* 2. Click "Upload", and add an image of your choosing.
+* 3. Once the image appears within the container view, click on it, and copy the "URL" property.
+* 4. Paste the URL into your browser to see if the image appropriately loads.
+
+You can also download the file from here as well.
+
+### QUESTION 2 OF 2
+You are trying to pull in some images from blob storage into your app, but have been unsuccessful. Which of the following changes might resolve this?
+
+* Give the blob storage container a public endpoint.
+* Add the access key for the blob storage account into the call.
 
 
 
