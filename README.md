@@ -1183,11 +1183,45 @@ You are trying to pull in some images from blob storage into your app, but have 
 * Give the blob storage container a public endpoint.
 * Add the access key for the blob storage account into the call.
 
+## Exercise: Blob Storage
 
+In this exercise, you will create a Storage Account with a Blob Container capable of storing images. In a later exercise, you will connect an app to the container, so that you can both get and post images from the app into the container.
 
+* 1. Deploy a Storage Account in Azure to the “resource-group-west” resource group (or whichever resource group you have been using in earlier exercises).
+* 2. Add a Blob Container to the Storage Account named ```images```.
+* 3. Upload an image into the container.
 
+<strong>Note:</strong> Azure free accounts only allow 5GB of free blob storage. Once you get to the end of this lesson, you will want to delete the Storage Account to avoid incurring any charges, as you'll create a different Storage Account in the final course project.
 
+### Solution: Blob Storage
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=0fpwGAA0BFw&feature=emb_logo)
+
+In this solution video, I showed you an alternative way to create an Azure Storage Account and a Storage Container using Azure CLI.
+
+First we create our storage account. We use the following command:
+
+```
+az storage account create \
+ --name helloworld12345 \
+ --resource-group resource-group-west \
+ --location westus2
+ ```
+
+The storage will default to general purpose V2 and the access tier cannot be set, so it will default to hot.
+Then we create our container.
+
+```
+az storage container create \
+ --account-name helloworld12345 \
+ --name images \
+ --auth-mode login \
+ --public-access container
+ ```
+ 
+You can go to the portal to check that the storage account and container have been created. You can then upload an image through the portal the same way as in the earlier video; coming up, we'll look at how to connect a Python app so that the app can handle uploading images.
+
+Lastly, I also showed you how to set up a new lifecycle management rule for an alert, which can be found under "Blob Service" within your Storage Account, under "Lifecycle Management".
 
 
 
