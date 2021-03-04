@@ -1223,7 +1223,28 @@ You can go to the portal to check that the storage account and container have be
 
 Lastly, I also showed you how to set up a new lifecycle management rule for an alert, which can be found under "Blob Service" within your Storage Account, under "Lifecycle Management".
 
+## Connecting Your App to Storage
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=4n_L0OlldXc&feature=emb_logo)
+
+To connect an app to the storage we've set up, we need a few things from each storage service.
+
+From the SQL server and database:
+
+* 1. SQL Server server name (the name of the sql server with .database.windows.net appended to it)
+* 2. Admin username
+* 3. Admin password
+* 4. SQL Database name
+
+From blob storage:
+
+* 1. Storage account name
+* 2. A storage account access key
+* 3. Container name
+
+In our case, we're keeping the management of these values a bit simpler with a config.py file that will be imported into the primary app file.
+
+### Azure Storage Blob Library for Python
 
 
 
