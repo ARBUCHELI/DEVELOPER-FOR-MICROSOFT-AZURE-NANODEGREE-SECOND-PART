@@ -1460,6 +1460,10 @@ Your company is developing a new app on Azure, and developers under the project 
 * Azure Active Directory
 * Azure Monitor
 
+## Case Study: Security Best Practices in Azure
+
+### Case Study: Security Best Practices
+
 
  
   
