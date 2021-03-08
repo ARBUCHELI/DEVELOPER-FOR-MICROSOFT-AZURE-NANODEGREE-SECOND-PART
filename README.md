@@ -1510,7 +1510,9 @@ Your app service is running version 0.12.1 of a Python library, while the latest
 
 * Monitor the security state of your App Service environments.
 
+## Azure Active Directory
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=7jZxyvMsVtI&t=59s)
 
 
 
