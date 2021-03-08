@@ -1434,11 +1434,33 @@ It's important to note here that some security responsibilities always stay with
  
  ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/55.jpg)
  
+ ## Security Options in Azure
  
+ ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/56.jpg)
  
+ There are a ton of services and topics to consider in Azure, each with their own respective use cases. While we will focus on Azure Active Directory, OAuth 2.0 with MSAL, and some aspects of Azure Monitor in this lesson, it's still worth noting the basics of the other services and topics.
  
+ ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/57.jpg)
  
+* <strong>Azure Active Directory:</strong> Provides single sign-on (SSO) and multi-factor authentication (MFA) capabilities, such as Sign in with Microsoft
+* <strong>App Configuration:</strong> Stores application settings in one secure location
+* <strong>Key Vault API:</strong> Stores application keys and secrets in one secure location
+* <strong>Managed Identities:</strong> A part of Azure Active Directory; This helps streamline providing an app or app user access to other Azure resources
+* <strong>Shared Access Signatures:</strong> Give external parties certain limited access (determined by you) to different Azure resources
+* <strong>Role-Based Access Controls (RBAC):</strong> Help internally manage who has access to what resources, and what they can do to said resources
+* <strong>Azure Monitor:</strong> Provides a wide range of monitoring services such as log analytics, metrics, alerts, and much more
+* <strong>Application Insights:</strong> Part of Azure Monitor; This helps monitor performance and other key metrics
  
+ ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/58.jpg)
+ 
+### QUESTION 2 OF 2
+Your company is developing a new app on Azure, and developers under the project are under a strict NDA to not discuss project details with others inside the company. Within the app itself, it should be able to authenticate users with their Microsoft logins, as well as log attempts to access the deployed app by non-authorized accounts. Which of the following security options might be used here?
+
+* Azure RBAC
+* Azure Active Directory
+* Azure Monitor
+
+
  
   
   
