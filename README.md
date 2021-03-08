@@ -907,7 +907,7 @@ In this lesson, we focused on Azure Compute Services:
 
 <strong>Azure Kubernetes Service (AKS)</strong> Microsoft's own platform for hosting and managing Kubernetes, including deploying docker containers into clusters (covered in a later course).
 
-_________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________________
 
 # LEESON 3 AZURE STORAGE
 
@@ -1403,9 +1403,36 @@ In this lesson, you:
 
 <strong>Retention</strong>	How long to store a given piece of data or file for, such as 30 days.
  
+ _______________________________________________________________________________________________________________________________________________________________________________
  
+ # LESSON 4 SECURITY AND MONITORING BASICS 
  
+ ## Introduction 
  
+ In this lesson, you'll:
+
+* Differentiate the security responsibilities between cloud developers and the cloud provider
+* Discover the various security options available in Azure
+* Get hands-on with Azure Active Directory, OAuth 2.0, and the Microsoft Authentication Library (MSAL)
+* Add monitoring and logging into your Azure applications, including storing logs and activating alerts
+
+Once again, this could be a course of its own, so we'll also provide a lot of additional materials for other areas to investigate outside of the scope of this lesson.
+ 
+ ![](https://video.udacity-data.com/topher/2020/July/5f10a70f_course-outline-security-monitor/course-outline-security-monitor.png)
+ 
+ ## Security Responsibilities 
+ 
+Just like we saw early on in the course with technology stack differences between on-premises, IaaS, PaaS and SaaS, security responsibilities also differ among these service types. For the cloud developer, on-premises still puts all security responsibilities onto them. With IaaS, the security of physical hardware shifts to the cloud provider. With PaaS, the operating system security shifts to be the responsibility of the cloud provider, while network, application and identity security are a shared responsibility. With SaaS, the network and application shift responsibility to the cloud provider, but identity stays as a shared responsibility.
+
+It's important to note here that some security responsibilities always stay with the cloud developer:
+
+* Account and access management (E.g. do you give the appropriate people the right access, and revoke access when appropriate?)
+* Client endpoints (E.g. do you secure the appropriate endpoints to confidential information?)
+* Data Governance and Rights Management (E.g. do you prevent employees from emailing confidential documents to third parties?)
+ 
+ ![](https://video.udacity-data.com/topher/2020/July/5f10b4be_azure-security-responsibilities/azure-security-responsibilities.png)
+ 
+ ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/55.jpg)
  
  
  
