@@ -1464,6 +1464,57 @@ Your company is developing a new app on Azure, and developers under the project 
 
 ### Case Study: Security Best Practices
 
+While we'll focus largely on Azure Active Directory and the Microsoft Authentication library in upcoming sections, it's important to also look at the broader contexts of best practices in security for the different deployment types we had earlier in the course - IaaS (with Virtual Machines) and PaaS (with App Services).
+
+Microsoft has put together some great documentation for best practices for both of these, so first spend a few minutes reading each post (or at a minimum, skimming them).
+
+* [IaaS Security Best Practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/iaas)
+* [PaaS Security Best Practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/paas-deployments)
+
+You'll use the knowledge from each of these to answer the below quizzes.
+
+### Deep Dive - PaaS
+If you want, you can also dive a little deeper on the PaaS side of things with more specific articles around App Services, Azure SQL Database and Azure Storage with the below links, but they aren't required to answer the quiz questions.
+
+* [Deep Dive: App Service Best Practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-app-services)
+* [Deep Dive: Azure SQL Database Best Practices](https://docs.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-sql)
+* [Deep Dive: Azure Storage](https://docs.microsoft.com/en-us/azure/security/fundamentals/paas-applications-using-storage)
+
+### QUESTION 1 OF 5
+Which of the following are security best practices related to Virtual Machines?
+
+* Enable encryption on VMs.
+* Identify and remediate exposed VMs that allow access from “any” source IP address.
+* Install the latest security updates.
+* Control VM access.
+
+### QUESTION 2 OF 5
+Which of the following are security best practices related to App Services?
+
+* Authenticate through Azure Active Directory.
+* Don’t put credentials and other secrets in source code or GitHub.
+* Perform security penetration testing.
+
+### QUESTION 3 OF 5
+Which of the below describe a difference in best practices between Virtual Machines and App Services?
+
+* App Services do not have best practices around hard disks.
+
+### QUESTION 4 OF 5
+You are moved onto a project at work, and given your Azure experience, are asked to identify any security issues. One virtual machine that supports the project was deployed October 30th, 2017. What best practice may have been violated?
+
+* Periodically redeploy your VMs to force a fresh version of the OS.
+
+### QUESTION 5 OF 5
+Your app service is running version 0.12.1 of a Python library, while the latest version is 2.1.3. An external party is able to access certain data due to a vulnerability fixed in version 1.5.6. What best practice may have been violated?
+
+* Monitor the security state of your App Service environments.
+
+
+
+
+
+
 
  
   
