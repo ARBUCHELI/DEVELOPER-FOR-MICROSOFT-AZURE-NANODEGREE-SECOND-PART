@@ -1551,7 +1551,20 @@ This exercise will get you familiar with registering an app in Azure Active Dire
 * 5. Copy down the "Application (client) ID", which will be used in the next exercise.
 * 6. Create and copy down a client secret key, which will be used in the next exercise.
 
+## Solution: Azure Active Directory
 
+This is the same process as before, so we'll skip the video this time through.
+
+## To register your app and get the necessary app information for the next exercise:
+
+* 1. Navigate to Azure Active Directory in the Azure portal.
+>> * If you are using a corporate Microsoft account, you might be restricted from access, in which case you would need to use a personal account for this stage of the exercise.
+* 2. You should already have a default tenant to use, but if not, create a new tenant and fill in the required information.
+* 3. Navigate to the "App registrations" page, and enter a name for the app, while allowing the widest set of accounts to access it.
+>> * Remember, you'll likely want to be more restrictive when creating your own apps.
+* 4. You can ignore the Redirect URI for now, as that will be added as part of the next exercise.
+* 5. After you click "Register", copy down the "Application (client) ID", as you'll need that for the next exercise.
+* 6. Additionally, under "Manage", click "Certificates & secrets", then "+ New client secret", then enter a description (you can decide on your own desired expiration time). Copy down string under "Value", and make sure you store it somewhere safe.
 
 
 
