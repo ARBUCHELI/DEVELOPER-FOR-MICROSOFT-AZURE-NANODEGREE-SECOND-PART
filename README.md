@@ -1610,11 +1610,49 @@ Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=7OS920xtw1A&t=2s)
 
+### Getting the Authorization Code
+You'll first need to create a ```ConfidentialClientApplication```:
 
+* First create a ```ConfidentialClientApplication``` object. This class requires a Client ID and Client Secret from Azure AD.
+* It also requires an “authority” based on single or multi-tenant access.
+>> * For example, [https://login.microsoftonline.com/common](https://login.microsoftonline.com/common) is for multi-tenant access whereas single tenant access would replace /common with a tenant id
+* We can also pass in an optional argument for a cached session to avoid re-requesting information.
 
+Once the client is created, you'll use the ```get_authorization_request_url``` function of the client object. This requires:
 
+* A scope, such as ```USER.READ```
+* State (UUID in our case, identifying the session)
+* Redirect URI
+*
+Note that you can find more on the MSAL library code in the link further down the page as well.
 
+### Getting the Access Token
 
+After re-creating the ```ConfidentialClientApplication``` object using the ```cache``` value, you then use the ````acquire_token_by_authorization_code``` method. This method requires:
+
+* An authorization code
+* A scope
+
+This method also takes other parameters, so this could be a good spot for adding in a ```redirect_uri``` to push a user to a particular endpoint.
+
+### Logging Out
+
+It's also important to make sure your users can log out. This is actually a bit separate from the MSAL library itself, and is more concerned with a particular endpoint:
+
+```
+return redirect(Config.AUTHORITY + '/oauth2/v2.0/logout' +
+    '?post_logout_redirect_uri=' +
+    url_for('login', _external=True))
+```
+
+I briefly mentioned the ```/oauth2/v2.0/logout``` endpoint earlier, and that’s what you can redirect to after the user clicks a sign out button. It will start with the authority they signed in with, such as ```https://login.microsoftonline.com/common``` for a multi-tenant app, the OAuth logout endpoint, as well as a post-logout redirect URI.
+
+Here, this assumes the app has some Flask endpoint for “login”, that is external to the original redirect URI (separate from Microsoft). You will also want to enter your redirect URI back in Azure AD, like you did with the redirect URIs for logging in.
+
+### Additional Resources - MSAL
+
+* [Python Documentation for Microsoft Authentication Library](https://msal-python.readthedocs.io/en/latest/)
+* [Microsoft Graph permissions levels](https://docs.microsoft.com/en-us/graph/permissions-reference) - such as ```User.Read``` that gives an app permission to read user profile data
 
 ________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
