@@ -267,6 +267,9 @@ We'll focus on Virtual Machines and App Services in this lesson, although you'll
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/18.jpg)
 
+### Microsoft Learn Resources
+* [Core Cloud Services - Azure compute options](https://docs.microsoft.com/en-us/learn/modules/azure-compute-fundamentals/)
+
 ## Subscriptions and Resource Groups
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/19.jpg)
@@ -314,6 +317,12 @@ Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/23.jpg)](https://www.youtube.com/watch?v=_9nHPP0gixc&feature=emb_logo)
 
+### Microsoft Learn Resources
+* [Manage resources in Azure](https://docs.microsoft.com/en-us/learn/paths/manage-resources-in-azure/?WT.mc_id=udacity_learn-wwl)
+* [Move Azure resources to another resource group](https://docs.microsoft.com/en-us/learn/modules/move-azure-resources-another-resource-group/?WT.mc_id=udacity_learn-wwl)
+* [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/?WT.mc_id=udacity_learn-wwl)
+* [Create ARM templates](https://docs.microsoft.com/en-us/learn/modules/build-azure-vm-templates/?WT.mc_id=udacity_learn-wwl)
+
 ## Exercise: Create A Resource Group
 
 In this exercise, you'll create a resource group in Azure. This is a quick exercise, but will set you up for success through the rest of the course!
@@ -327,6 +336,9 @@ In this exercise, you'll create a resource group in Azure. This is a quick exerc
 Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
+
+### Azure CLI Documentation
+You can reference the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest&WT.mc_id=udacity_learn-wwl) for further information on other commands.
 
 ### Steps to Create a Resource Group using the Azure CLI:
 
@@ -605,6 +617,11 @@ You've gone through all the steps for creating a Virtual Machine and deploying a
 
 * You need to make sure the VM is listening on port 80
 
+### Microsoft Learn Resources
+* [Introduction to Azure virtual machines](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-virtual-machines/?WT.mc_id=udacity_learn-wwl)
+* [Create a Linux virtual machine in Azure](https://docs.microsoft.com/en-us/learn/modules/create-linux-virtual-machine-in-azure/?WT.mc_id=udacity_learn-wwl)
+* [Deploy a website with Azure virtual machines](https://docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-virtual-machines/?WT.mc_id=udacity_learn-wwl)
+
 ## Exercise: Creating a Virtual Machine
 
 ### Create a Linux Virtual Machine
@@ -797,6 +814,11 @@ If we no longer need a resource, we can delete them through the portal.
 * 3. You have two options—"Delete resource group" or if you want to keep the resource group, you can click on the individual or collection of resources you want to delete and click on "Delete".
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/50.jpg)
+
+### Microsoft Learn Resources)
+* [Host a web application with Azure App service](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/?WT.mc_id=udacity_learn-wwl)
+* [Manage an App Service plan in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage?WT.mc_id=udacity_learn-wwl)
+* [Deploy a website to Azure with Azure App Service](https:/)/docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=udacity_learn-wwl)
 
 ## Exercise: Creating an App Service
 
