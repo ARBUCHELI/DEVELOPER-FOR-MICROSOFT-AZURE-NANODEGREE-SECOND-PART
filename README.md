@@ -1654,6 +1654,32 @@ Here, this assumes the app has some Flask endpoint for “login”, that is exte
 * [Python Documentation for Microsoft Authentication Library](https://msal-python.readthedocs.io/en/latest/)
 * [Microsoft Graph permissions levels](https://docs.microsoft.com/en-us/graph/permissions-reference) - such as ```User.Read``` that gives an app permission to read user profile data
 
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/61.jpg)
+
+### QUESTION 2 OF 2
+You've built an app that utilizes the msal library for authentication purposes. The app and its related login/logout flow work fine when running on localhost, but when you deploy the app, the app loads but authentication doesn't work appropriately. What step might you have skipped with the live application?
+
+* The live app's redirect URI needs to be added in Azure AD
+
+### Microsoft Learn Resources - Authentication
+While KeyVault API, Managed Identities, Shared Access Signatures, and Role-Based Access Controls (RBAC) are outside the scope of this course, we encourage you to check them out below, especially if you plan to take Microsoft's [AZ-204](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204) exam on Developing Solutions for Microsoft Azure.
+
+* [Secure app configuration data by using the App Configuration and KeyVault API](https://docs.microsoft.com/en-us/learn/modules/configure-and-manage-azure-key-vault/)
+* [Manage keys, secrets, and certificates by using the KeyVault API (same content as above)](https://docs.microsoft.com/en-us/learn/modules/configure-and-manage-azure-key-vault)
+* [Implement Managed Identities for Azure resources](https://docs.microsoft.com/en-us/learn/modules/authenticate-apps-with-managed-identities/)
+* [Create and implement shared access signatures](https://docs.microsoft.com/en-us/learn/modules/control-access-to-azure-storage-with-sas/)
+* [Control access to resources by using role-based access controls (RBAC)](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/)
+
+
+
+
+
+
+
+
+
+
+
 ________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
 
