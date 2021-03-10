@@ -1512,6 +1512,8 @@ Your app service is running version 0.12.1 of a Python library, while the latest
 
 ## Azure Active Directory
 
+Please open the link in a new tab to watch the tutorial:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=7jZxyvMsVtI&t=59s)
 
 Azure Active Directory is Microsoft’s solution for single sign-on (SSO) and multi-factor authentication (MFA). We'll be using it in combination with the Microsoft Authentication Library (MSAL) to use "Sign in with Microsoft" buttons in an app, although it can be used more broadly for identity management purposes within an organization. The "tenant" in Azure AD is usually equivalent to an organization.
@@ -1598,8 +1600,13 @@ You can also find the complete workflow in [Microsoft's documentation.](https://
 
 ![](https://video.udacity-data.com/topher/2020/July/5f10b619_msal-oauth-process/msal-oauth-process.png)
 
+## OAuth2 with MSAL Part 2
 
-  
+### MSAL in Code
+
+There are a few key parts to implement in your code when working with MSAL. Note that the library is just ```msal``` if you install it with ```pip install```.
+
+
 
 
 
