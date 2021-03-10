@@ -1569,7 +1569,9 @@ This is the same process as before, so we'll skip the video this time through.
 ## OAuth2 with MSAL Part 1
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/59.jpg)
-![](
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/60.jpg)
+
+
 
   
   
