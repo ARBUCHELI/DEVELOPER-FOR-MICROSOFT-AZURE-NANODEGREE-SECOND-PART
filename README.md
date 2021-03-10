@@ -1606,7 +1606,9 @@ You can also find the complete workflow in [Microsoft's documentation.](https://
 
 There are a few key parts to implement in your code when working with MSAL. Note that the library is just ```msal``` if you install it with ```pip install```.
 
+Please open the link in a new tab to watch the tutorial:
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)]()
 
 
 
