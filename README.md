@@ -1543,13 +1543,13 @@ You created a web app and have deployed it as a live website, with a requirement
 
 This exercise will get you familiar with registering an app in Azure Active Directory, which will set you up for the next exercise to use Microsoft Authentication.
 
-Navigate to Azure Active Directory in the Azure portal.
-If you are using a corporate Microsoft account, you might be restricted from access, in which case you would need to use a personal account for this stage of the exercise.
-You should already have a default tenant to use, but if not, create a new tenant and fill in the required information.
-Create a new app registration, and set it to allow both any organizations and personal accounts.
-You can ignore the Redirect URI for now, as that will be added as part of the next exercise.
-Copy down the "Application (client) ID", which will be used in the next exercise.
-Create and copy down a client secret key, which will be used in the next exercise.
+* 1. Navigate to Azure Active Directory in the Azure portal.
+>> * If you are using a corporate Microsoft account, you might be restricted from access, in which case you would need to use a personal account for this stage of the exercise.
+* 2. You should already have a default tenant to use, but if not, create a new tenant and fill in the required information.
+* 3. Create a new app registration, and set it to allow both any organizations and personal accounts.
+* 4. You can ignore the Redirect URI for now, as that will be added as part of the next exercise.
+* 5. Copy down the "Application (client) ID", which will be used in the next exercise.
+* 6. Create and copy down a client secret key, which will be used in the next exercise.
 
 
 
