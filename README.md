@@ -1597,6 +1597,8 @@ You'd also need to provide the ability for users to logout.
 You can also find the complete workflow in [Microsoft's documentation.](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 
 ![](https://video.udacity-data.com/topher/2020/July/5f10b619_msal-oauth-process/msal-oauth-process.png)
+
+
   
 
 
