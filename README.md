@@ -1566,7 +1566,10 @@ This is the same process as before, so we'll skip the video this time through.
 * 5. After you click "Register", copy down the "Application (client) ID", as you'll need that for the next exercise.
 * 6. Additionally, under "Manage", click "Certificates & secrets", then "+ New client secret", then enter a description (you can decide on your own desired expiration time). Copy down string under "Value", and make sure you store it somewhere safe.
 
+## OAuth2 with MSAL Part 1
 
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/59.jpg)
+![](
 
   
   
