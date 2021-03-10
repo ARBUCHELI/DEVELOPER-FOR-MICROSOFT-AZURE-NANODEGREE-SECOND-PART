@@ -54,6 +54,10 @@ Cloud Developers perform some of the following:
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/3.jpg)
 
+### Microsoft Learn Resources
+* [Cloud Concepts - Principles of cloud computing](https://docs.microsoft.com/en-us/learn/modules/fundamental-azure-concepts/)
+* [Foundations of cloud computing for developers](https://docs.microsoft.com/en-us/learn/modules/cmu-cloud-computing-overview/?WT.mc_id=udacity_learn-wwl)
+
 ## Why Cloud Development Is Important
 
 You've probably worked with various cloud services before, such as Microsoft OneDrive and Google Docs, and of course, you'll be working with Microsoft Azure in this course.
@@ -74,6 +78,10 @@ Some of the disadvantages of cloud computing are:
 ![image](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/4.jpg)
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/5.jpg)
+
+### Microsoft Learn Resources
+* [Economics of cloud computing](https://docs.microsoft.com/en-us/learn/modules/cmu-cloud-economics/)
+* [Predict costs and optimize spending for Azure](https://docs.microsoft.com/en-us/learn/modules/plan-manage-azure-costs/)
 
 ## Business Stakeholders
 
@@ -148,11 +156,18 @@ The Azure products this course will focus on are:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/10.jpg)
 
+### Microsoft Learn Resources
+* [Align requirements with cloud types and service models in Azure](https://docs.microsoft.com/en-us/learn/modules/align-requirements-in-azure/?WT.mc_id=udacity_learn-wwl)
+* [Core Cloud Services - Azure architecture and service guarantees](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/)
+
 ## The Azure Portal
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/11.jpg)
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/12.jpg)
+
+### Microsoft Learn Resources
+* [Core Cloud Services - Manage services with the Azure portal](https://docs.microsoft.com/en-us/learn/modules/tour-azure-portal/?WT.mc_id=udacity_learn-wwl)
 
 ## IaaS, PaaS, and SaaS
 
@@ -170,6 +185,12 @@ In contrast to on-premises solutions, there are three types of services that Azu
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/14.jpg)
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/15.jpg)
+
+### Microsoft Learn Resources
+* [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/?WT.mc_id=udacity_learn-wwl)
+* [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/?WT.mc_id=udacity_learn-wwl)
+* [Prepare your development environment for Azure development](https://docs.microsoft.com/en-us/learn/modules/prepare-your-dev-environment-for-azure-development/?WT.mc_id=udacity_learn-wwl)
+* [Implement a code workflow in your build pipeline by using Git and GitHub](https://docs.microsoft.com/en-us/learn/modules/implement-code-workflow/?WT.mc_id=udacity_learn-wwl)
 
 ## Project: Deploy an Article CMS to Azure
 
