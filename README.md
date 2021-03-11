@@ -1793,12 +1793,59 @@ Together, the above four steps should allow you to have a functional "Sign in wi
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=CFRywEmy-2Q&feature=emb_logo)
 
+This was my approach to the exercise:
 
+### Add necessary variables in ```config.py```
 
+* 1. Fill out ```CLIENT_SECRET``` and ```CLIENT_ID``` by getting the relevant values from the registered app in Azure Active Directory (see previous exercise).
+* 2. Add a ```REDIRECT_PATH``` - I used ```"/getAToken"```.
+* 3. Note that if we were using a single tenant app, ```AUTHORITY``` would switch from ```https://login.microsoftonline.com/common``` to ending instead with the tenant name (in place of ```common```).
 
+### Add the redirect and logout URIs in Azure AD
 
+* 1. Within your registered app, under "Manage", click on "Authentication", then "+Add a platform".
+* 2. Select "Web" under "Web applications" in the new window.
+* 3. Enter ```https://localhost:5555/getAToken``` in the redirect URI (replace ```/getAToken``` with your own ```REDIRECT_PATH```).
+* 4. Enter ```https://localhost:5555/login``` in the logout URI - we want the user to be redirected back to the login page of this app when they logout. Other apps could potentially just redirect back to a homepage (our homepage is hidden behind the login process).
+* Click Configure.
 
+### Adding MSAL functionality
 
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/62.jpg)
+
+### Implement "Sign in with Microsoft" with MSAL
+
+* 1. In ```_build_msal_app```, you'll want to use a ```ConfidentialClientApplication``` (see documentation [here](https://msal-python.readthedocs.io/en/latest/#confidentialclientapplication)):
+
+ return msal.ConfidentialClientApplication(
+     Config.CLIENT_ID, authority=authority or Config.AUTHORITY,
+     client_credential=Config.CLIENT_SECRET, token_cache=cache)
+In _build_auth_url, you can use the previous msal app to get an authorization request url (see documentation here):
+
+return _build_msal_app(authority=authority).get_authorization_request_url(
+    scopes or [],
+    state=state or str(uuid.uuid4()),
+    redirect_uri=url_for('authorized', _external=True, _scheme='https'))
+If we go back to our authorized function, we'll see a place where we can use our _build_msal_app function again, this time to acquire a token (see documentation here):
+
+ result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
+     request.args['code'],
+     scopes=Config.SCOPE,
+     redirect_uri=url_for('authorized', _external=True, _scheme='https'))
+At this point, logging a user in with Microsoft should work just fine, but you should also make sure they are able to log out. So, along with making sure you have the correct logout URI in Azure AD, you also need to return the correct redirect in logout:
+
+ return redirect(
+     Config.AUTHORITY + '/oauth2/v2.0/logout' +
+     '?post_logout_redirect_uri=' + url_for('login', _external=True))
+Using HTTPS with Your App
+You may have noticed the use of _scheme='https' and _external=True in the url_for() functions used in this exercise.
+
+Setting the _scheme to "https" allows it to be served to the browser, as you may guess, through "https". Now, we don't have a fully secure app, as you may note when you try to open it in your browser; however, in this basic app, it's not super concerning just yet. However, Azure Active Directory will not allow you to use a non-HTTPS website for a live app's redirect URI (localhost can still use HTTP).
+
+In order for this _scheme setting to work, _external must also be set to True, which just means an absolute URL will be created, as opposed to a relative URL such as which works with localhost.
+
+Handle MSAL Exceptions and Errors
+This article gives an overview of the different types of errors and recommendations for handling common sign-in errors.
 
 
 
