@@ -673,6 +673,9 @@ Once you're done with the exercise, be sure to delete the VM and it's resources 
 
 <strong>Note:</strong> Azure free accounts only allow 750 hours of free hosting. Make sure to delete this VM after completing the exercise to avoid charges.
 
+### Supporting Materials
+[create-vm-starter.zip](https://video.udacity-data.com/topher/2020/July/5f1875e2_create-vm-starter/create-vm-starter.zip)
+
 ## Solution: Creating a Virtual Machine
 
 Please open the link in a new tab to watch the tutorial:
@@ -849,6 +852,9 @@ It’s finally time to deploy some code to Azure! Download the web app code prov
 * 1. Create a new repo and push the web app code to the repo
 * 2. On Azure portal in the Deployment Center, deploy the web app from GitHub
 * 3. Navigate to the deployed URL
+
+### Supporting Materials
+[create-app-service-starter.zip](https://video.udacity-data.com/topher/2020/July/5f18767d_create-app-service-starter/create-app-service-starter.zip)
 
 ## Solution: Creating an App Service
 
@@ -1068,6 +1074,9 @@ In this exercise, you will create an Azure SQL Database and add data to it. In a
 * 2. Within the Azure portal, add the data from the script in the sql_scripts directory here to the database. You should be able to run a SELECT query afterward on the animals table to see the example animals populated in your database.
 
 <strong>Note:</strong> Azure free accounts only allow 250GB of free storage using SQL Databases. Once you get to the end of this lesson, you will want to delete the SQL Database and SQL Server to avoid incurring any charges, as you'll create a different SQL Database in the final course project.
+
+### Supporting Materials
+[sql-scripts.zip](https://video.udacity-data.com/topher/2020/July/5f075d26_sql-scripts/sql-scripts.zip)
 
 ## Solution: Azure SQL Databases
 
@@ -1388,6 +1397,9 @@ While it's not a required part of this exercise, you can also try to deploy the 
   ```brew install unixodbc```
  
 * Check [here](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/install-microsoft-odbc-driver-sql-server-macos?view=sql-server-ver15&viewFallbackFrom=sql-server-ver15%3FWT.mc_id%3Dudacity_learn-wwl) to add SQL Server drivers for Mac. [This StackOverflow](https://stackoverflow.com/questions/44527452/cant-open-lib-odbc-driver-13-for-sql-server-sym-linking-issue) post may also help resolve certain issues.
+
+### Supporting Materials
+[connect-app-to-storage-starter.zip](https://video.udacity-data.com/topher/2020/July/5f188996_connect-app-to-storage-starter/connect-app-to-storage-starter.zip)
   
  ## Solution: Connecting Your App to Storage
  
@@ -1777,7 +1789,9 @@ Together, the above four steps should allow you to have a functional "Sign in wi
 ### Supporting Materials
 [oauth-msal-starter.zip](https://video.udacity-data.com/topher/2020/July/5f075c1e_oauth-msal-starter/oauth-msal-starter.zip)
 
+## Solution: OAuth2 with MSAL
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=CFRywEmy-2Q&feature=emb_logo)
 
 
 
