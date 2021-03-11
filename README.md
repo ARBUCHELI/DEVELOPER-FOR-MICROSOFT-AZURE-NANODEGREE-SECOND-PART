@@ -1817,35 +1817,46 @@ This was my approach to the exercise:
 
 * 1. In ```_build_msal_app```, you'll want to use a ```ConfidentialClientApplication``` (see documentation [here](https://msal-python.readthedocs.io/en/latest/#confidentialclientapplication)):
 
- return msal.ConfidentialClientApplication(
+```
+return msal.ConfidentialClientApplication(
      Config.CLIENT_ID, authority=authority or Config.AUTHORITY,
      client_credential=Config.CLIENT_SECRET, token_cache=cache)
-In _build_auth_url, you can use the previous msal app to get an authorization request url (see documentation here):
+ ```    
+     
+2. In ```_build_auth_url```, you can use the previous msal app to get an authorization request url (see documentation [here](https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.get_authorization_request_url)):
 
+```
 return _build_msal_app(authority=authority).get_authorization_request_url(
     scopes or [],
     state=state or str(uuid.uuid4()),
     redirect_uri=url_for('authorized', _external=True, _scheme='https'))
-If we go back to our authorized function, we'll see a place where we can use our _build_msal_app function again, this time to acquire a token (see documentation here):
+```
+    
+* 3. If we go back to our ```authorized``` function, we'll see a place where we can use our ```_build_msal_app``` function again, this time to acquire a token (see documentation [here](https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_authorization_code)):
 
- result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
+```
+result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
      request.args['code'],
      scopes=Config.SCOPE,
      redirect_uri=url_for('authorized', _external=True, _scheme='https'))
-At this point, logging a user in with Microsoft should work just fine, but you should also make sure they are able to log out. So, along with making sure you have the correct logout URI in Azure AD, you also need to return the correct redirect in logout:
+```
+* 4. At this point, logging a user in with Microsoft should work just fine, but you should also make sure they are able to log out. So, along with making sure you have the correct logout URI in Azure AD, you also need to return the correct redirect in ```logout```:
 
+ ```
  return redirect(
      Config.AUTHORITY + '/oauth2/v2.0/logout' +
      '?post_logout_redirect_uri=' + url_for('login', _external=True))
-Using HTTPS with Your App
-You may have noticed the use of _scheme='https' and _external=True in the url_for() functions used in this exercise.
+ ```
+ 
+### Using HTTPS with Your App
+You may have noticed the use of ```_scheme='https'``` and ```_external=True``` in the ```url_for()``` functions used in this exercise.
 
-Setting the _scheme to "https" allows it to be served to the browser, as you may guess, through "https". Now, we don't have a fully secure app, as you may note when you try to open it in your browser; however, in this basic app, it's not super concerning just yet. However, Azure Active Directory will not allow you to use a non-HTTPS website for a live app's redirect URI (localhost can still use HTTP).
+Setting the ```_scheme``` to "https" allows it to be served to the browser, as you may guess, through "https". Now, we don't have a fully secure app, as you may note when you try to open it in your browser; however, in this basic app, it's not super concerning just yet. However, Azure Active Directory will not allow you to use a non-HTTPS website for a live app's redirect URI (localhost can still use HTTP).
 
-In order for this _scheme setting to work, _external must also be set to True, which just means an absolute URL will be created, as opposed to a relative URL such as which works with localhost.
+In order for this ```_scheme``` setting to work, ```_external``` must also be set to True, which just means an absolute URL will be created, as opposed to a relative URL such as which works with localhost.
 
-Handle MSAL Exceptions and Errors
-This article gives an overview of the different types of errors and recommendations for handling common sign-in errors.
+### Handle MSAL Exceptions and Errors
+This [article](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-error-handling-dotnet?tabs=python) gives an overview of the different types of errors and recommendations for handling common sign-in errors.
 
 
 
