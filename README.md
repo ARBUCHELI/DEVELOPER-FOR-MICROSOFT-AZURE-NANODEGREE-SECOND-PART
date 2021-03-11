@@ -976,6 +976,12 @@ Some of the benefits of using Azure for storage are:
 * Scale up or scale out when demand is high and scale back when demand is low.
 * Eliminate the expense of having to purchase, install, configure, and maintain on premises hardware.
 
+### Microsoft Learn Resources
+* [Core Cloud Services - Azure data storage options](https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/)
+* [Choose a data storage approach in Azure](https://docs.microsoft.com/en-us/learn/modules/choose-storage-approach-in-azure/?WT.mc_id=udacity_learn-wwl)
+* [Learning Path: Store data in Azure](https://docs.microsoft.com/en-us/learn/paths/store-data-in-azure/?WT.mc_id=udacity_learn-wwl)
+* [Learning Path: Architect a data platform in Azure](https://docs.microsoft.com/en-us/learn/paths/architect-data-platform/?WT.mc_id=udacity_learn-wwl)
+
 ### Azure Storage Options
 Among others, some of the Azure Storage options are:
 
@@ -1025,6 +1031,11 @@ To create an Azure SQL Database in the Azure Portal:
 Azure SQL Databases can be left up on the basic tier for no cost forever.
 
 * False
+
+### Microsoft Learn Resources
+* [Work with relational data in Azure](https://docs.microsoft.com/en-us/learn/paths/work-with-relational-data-in-azure/?WT.mc_id=udacity_learn-wwl)
+* [Provision an Azure SQL database to store application data](https://docs.microsoft.com/en-us/learn/modules/provision-azure-sql-db/?WT.mc_id=udacity_learn-wwl)
+* [Create an Azure Database for PostgreSQL server](https://docs.microsoft.com/en-us/learn/modules/intro-to-postgres/)
 
 ## Adding Data to the Database
 
@@ -1226,6 +1237,15 @@ You are trying to pull in some images from blob storage into your app, but have 
 * Give the blob storage container a public endpoint.
 * Add the access key for the blob storage account into the call.
 
+### Microsoft Learn Resources
+* [Create an Azure Storage account](https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/?WT.mc_id=udacity_learn-wwl)
+* [Secure your Azure Storage account](https://docs.microsoft.com/en-us/learn/modules/secure-azure-storage-account/?WT.mc_id=udacity_learn-wwl)
+* [Organize Azure storage blobs with properties and metadata](https://docs.microsoft.com/en-us/learn/modules/organize-blobs-properties-metadata/?WT.mc_id=udacity_learn-wwl)
+* [Implement data archiving and retention](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers?tabs=azure-portal&WT.mc_id=udacity_learn-wwl)
+* [Implement hot, cool, and archive storage (same content as above)](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers?tabs=azure-portal&WT.mc_id=udacity_learn-wwl) (same content as above)
+* [Move items in Blob storage between storage accounts or containers](https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code/?WT.mc_id=udacity_learn-wwl)
+* [Blob Storage lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal&WT.mc_id=udacity_learn-wwl)
+
 ## Exercise: Blob Storage
 
 In this exercise, you will create a Storage Account with a Blob Container capable of storing images. In a later exercise, you will connect an app to the container, so that you can both get and post images from the app into the container.
@@ -1338,6 +1358,10 @@ It's important to note here you don't need a file to feed to ```delete_blob``` -
 You create a book app showing book names, authors and front covers. You successfully connect your app to storage, and can see information queried from a SQL database within the app. When you add images to the app through your blob storage account, you don't see any errors, but they show up as broken images within the app afterward. They do appear in the container in the portal. What went wrong?
 
 * The app may not have any way to associate the book cover image to related query data
+
+### Microsoft Learn Resources
+* [Connect an app to Azure Storage](https://docs.microsoft.com/en-us/learn/modules/connect-an-app-to-azure-storage/?WT.mc_id=udacity_learn-wwl)
+* [Store application data with Azure Blob storage](https://docs.microsoft.com/en-us/learn/modules/store-app-data-with-azure-blob-storage/?WT.mc_id=udacity_learn-wwl)
 
 ## Exercise: Connecting Your App to Storage
 
@@ -1477,6 +1501,12 @@ It's important to note here that some security responsibilities always stay with
  
  ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/55.jpg)
  
+### Microsoft Learn Resources
+* [Cloud security](https://docs.microsoft.com/en-us/learn/modules/cmu-cloud-security/?WT.mc_id=udacity_learn-wwl)
+* [Security, responsibility, and trust in Azure](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/)
+* [Use a framework to identify threats and find ways to reduce or eliminate risk](https://docs.microsoft.com/en-us/learn/modules/tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk/?WT.mc_id=udacity_learn-wwl)
+* [Prioritize your issues and apply security controls](https://docs.microsoft.com/en-us/learn/modules/tm-prioritize-your-issues-and-apply-security-controls/?WT.mc_id=udacity_learn-wwl)
+ 
  ## Security Options in Azure
  
  ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/56.jpg)
@@ -1502,6 +1532,9 @@ Your company is developing a new app on Azure, and developers under the project 
 * Azure RBAC
 * Azure Active Directory
 * Azure Monitor
+
+### Microsoft Learn Resources
+* [Learning Path: Manage security operations in Azure](https://docs.microsoft.com/en-us/learn/paths/manage-security-operations/?WT.mc_id=udacity_learn-wwl)
 
 ## Case Study: Security Best Practices in Azure
 
@@ -1583,6 +1616,11 @@ You'll practice this yourself in the upcoming exercise.
 You created a web app and have deployed it as a live website, with a requirement to sign in with a Microsoft account to access it. When you signed on with your own account, the app seems to appropriately log you in, but your friend, who can access the sign in page, said they could not. What might have happened? (You can answer this without seeing the next section on OAuth2!)
 
 * The supported account type in Azure Active Directory may limit their access
+
+### Microsoft Learn Resources
+* [Secure Azure Active Directory users with Multi-Factor Authentication](https://docs.microsoft.com/en-us/learn/modules/secure-aad-users-with-mfa/?WT.mc_id=udacity_learn-wwl)
+* [Enable secure access to apps for external users with Azure AD B2C](https://docs.microsoft.com/en-us/learn/modules/enable-external-access-with-b2c/?WT.mc_id=udacity_learn-wwl)
+* [Monitor and report on security events in Azure AD](https://docs.microsoft.com/en-us/learn/modules/monitor-report-aad-security-events/?WT.mc_id=udacity_learn-wwl)
 
 ## Exercise: Azure Active Directory
 
