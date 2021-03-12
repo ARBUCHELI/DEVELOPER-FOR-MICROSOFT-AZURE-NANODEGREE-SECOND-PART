@@ -1858,7 +1858,43 @@ In order for this ```_scheme``` setting to work, ```_external``` must also be se
 ### Handle MSAL Exceptions and Errors
 This [article](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-error-handling-dotnet?tabs=python) gives an overview of the different types of errors and recommendations for handling common sign-in errors.
 
+## Monitoring and Logging in Azure
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=lxTPv7Nte8I&t=88s)
+
+<strong>Note:</strong> I should be using console logs when setting up my alert, not app logs.
+
+### Benefits of Logging
+Implementing logging in your applications can help with:
+
+* Troubleshooting problems or preventing potential new ones
+* Improving application performance or maintainability
+* Automating operations that would otherwise require manual intervention
+
+### Monitoring and Logging in Azure
+Azure gives developers the ability to:
+
+* Monitor metrics, such as performance and service quotas
+* Use App-based logging
+* Send logs to storage
+* Create alerts
+
+There are other monitoring and logging options, such as Application Insights and Log Analytics using the Kusto query language, that are outside of the scope of this course. We’ll focus on the built-in monitoring and logging offered to help debug an App Service App.
+
+![](https://video.udacity-data.com/topher/2020/July/5f10b55d_log-solution/log-solution.png)
+
+### Logging Considerations in a Flask App
+When building a Flask application, ```print``` statements won’t show up like they usually would in a regular Python application. You’ll need to use the built-in logger Flask has to log events. You’re able to set the minimum severity level of the events you want to capture; for example, you could set the logger to only capture events at a warning level or above.
+
+Check out the documentation in the resources below if you need some more background on how logging works for Flask applications.
+
+### Additional Resources - Flask and Logging
+* [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+* [Flask Logging Documentation](https://flask.palletsprojects.com/en/1.1.x/logging/)
+* [Standard Python Logging Library](https://docs.python.org/3/library/logging.html) (Flask logging is a logger object from this library)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/63.jpg)
+![](
 
 ________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
