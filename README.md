@@ -1791,6 +1791,8 @@ Together, the above four steps should allow you to have a functional "Sign in wi
 
 ## Solution: OAuth2 with MSAL
 
+Please open the link in a new tab to watch the tutorial:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=CFRywEmy-2Q&feature=emb_logo)
 
 This was my approach to the exercise:
@@ -1860,6 +1862,8 @@ This [article](https://docs.microsoft.com/en-us/azure/active-directory/develop/m
 
 ## Monitoring and Logging in Azure
 
+Please open the link in a new tab to watch the tutorial:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=lxTPv7Nte8I&t=88s)
 
 <strong>Note:</strong> I should be using console logs when setting up my alert, not app logs.
@@ -1900,6 +1904,105 @@ Check out the documentation in the resources below if you need some more backgro
 * [Analyze your Azure infrastructure by using Azure Monitor logs](https://docs.microsoft.com/es-es/learn/modules/analyze-infrastructure-with-azure-monitor-logs/?WT.mc_id=udacity_learn-wwl)
 * [Monitor apps in Azure App Service](https://docs.microsoft.com/es-es/azure/app-service/web-sites-monitor?WT.mc_id=udacity_learn-wwl)
 * [Implement code that handles transient faults](https://docs.microsoft.com/es-es/azure/architecture/best-practices/transient-faults?WT.mc_id=udacity_learn-wwl)
+
+## Exercise: Monitoring and Logging in Azure
+
+### Exercise: Monitoring & Logging
+
+In this exercise, you'll add logging to a web app, check out the logs in the Log stream for the app, create access alerts, and send the logs to a storage account for longer-term storage.
+
+Download the app code [here](https://classroom.udacity.com/nanodegrees/nd081-1/parts/e154e8c5-f0c6-4db4-b647-dadabfdc057b/modules/1cd2c151-9c62-4f63-b605-f6cc14be548f/lessons/b5d9586f-6ad0-4e51-ab92-53c3fea26d68/concepts/421ae6a5-b925-44aa-ac47-6ef818e00503).
+
+If you load the app on its own, you'll notice that this basic app has four buttons, responding to four different logging levels - ```info```, ```warning```, ```error``` and ```critical```. While in a complete app these would of course be triggered through different events occurring, in your case, you simply want to make sure Flask is appropriately logging these button presses.
+
+To complete the exercise:
+
+* 1. You want anything that is a ```warning``` or above to be logged. Make sure the app's logger is configured for this in ```__init__.py```. This means that if the ```info``` button is clicked, the related request will still be made, but both your local console, and later in Azure, should not note anything for ```info``` items.
+* 2. Add some logic in ```views.py``` for logging the correct level when a given button is pressed.
+* 3. Deploy the app as an app service. It may be easiest if you make a new resource group first, so that any additional services you add in the next steps can be easily deleted.
+
+```
+az webapp up \
+ --sku F1 \
+ --name {YOUR_APP_NAME} \
+ --resource-group {YOUR_RESOURCE_GROUP} \
+ --location westus2
+ ```
+ 
+* 4. While waiting for the app to deploy, create a new storage account in the resource group with your app service. Eventually, the logs will be stored here.
+
+* 5. Once the app has deployed, navigate to the app service in the Azure portal, as well as opening the app URL in a separate window or tab. Navigate to the Log stream for your app, and check whether the logs are appearing appropriately for each button. If not, go back to steps 1 & 2.
+
+* 6. Go the the Diagnostic settings of your app, and add a setting that sends the console logs to the storage account you created in Step 4. This will take around 10 minutes before logs start showing up in the storage account, so continue to the next step.
+
+* 7. In the Alerts section, create a new alert based on the Requests signal for when there are greater than a count of 20 requests in a 15 minute period (set this low so you will be sure to activate it). As part of doing so, create an action group, only including yourself, that will receive an email when the alert is triggered. This may also take roughly 10 minutes to kick in, so go ahead and progress to the next step.
+
+* 8. While you wait for the storage account to begin receiving logs and the alert to activate, go to the "Quotas" section under "App Service plan" in your app. Take note of the limits, which especially on the free tier are fairly low. If your app exceeds these limits, it will be stopped until the next reset, unless you scale up your app (outside the scope of this course). It's important to note here that all of these quota limitations are available for setting alerts - take a few minutes to consider what type of alerts you might consider setting to become aware of a potential upcoming quota issue.
+
+* 9. If it's been 10 minutes, go back to your app website and make sure to hit each of the buttons a few times to create additional logs and potentially activate an email alert. Then, go check if your storage container appropriately contains the logs, and if you have received an email alert.
+
+### Supporting Materials
+[monitor-log-starter.zip](https://video.udacity-data.com/topher/2020/July/5f075c72_monitor-log-starter/monitor-log-starter.zip)
+
+## Solution: Monitoring and Logging in Azure
+
+There's a few parts to this exercise, so let's step through each of them.
+
+### Adding Logging in the Flask App
+
+Please open the link in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/47.jpg)](https://www.youtube.com/watch?v=YLXB7YcQj84&t=37s)
+
+The text below each video is just a text form of the solution video, so feel free to skip if you got all you needed from the video.
+
+* 1. Flask doesn't output regular ```print``` statements as you'd see in other Python apps. However, the logger contained within a Flask app does output to ```sys.stderr```. Flask apps actually have this logger by default, and it uses the ```logging``` library from the Python standard library. As such, since we want to set the logging level to ```warning```, it can be done as follows in ```__init__.py```:
+
+```
+app.logger.setLevel(logging.WARNING)
+```
+We also want to update the stream handler for the logger to only pay attention to warnings and above:
+
+```
+streamHandler = logging.StreamHandler()
+streamHandler.setLevel(logging.WARNING)
+app.logger.addHandler(streamHandler)
+```
+* 2. There's quite a bit of room for exactly what messages you want to log for each log level in the app, but I did this in the basic fashion below, just stating back which level occurred:
+
+ ```
+ if log:
+     if log == 'info':
+         app.logger.info('No issue.')
+     elif log == 'warning':
+         app.logger.warning('Warning occurred.')
+     elif log == 'error':
+         app.logger.error('Error occurred.')
+     elif log == 'critical':
+         app.logger.critical('Critical error occurred.')
+ ```              
+* 3. From there, I first confirmed that the logs appeared to be working through the terminal by running on localhost, then I deployed the app as follows:
+
+```
+az webapp up \
+ --sku F1 \
+ --name {YOUR_APP_NAME} \
+ --resource-group {YOUR_RESOURCE_GROUP} \
+ --location westus2
+``` 
+ 
+### Sending Logs to Storage
+
+
+
+
+
+
+
+
+
+
+
 
 
 
