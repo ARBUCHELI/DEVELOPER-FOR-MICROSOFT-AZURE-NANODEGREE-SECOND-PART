@@ -4,7 +4,7 @@
 
 ## The first part corresponds to the material provided during the first phase of the scholarship.
 
-# LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT:
+# LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT
 
 ## Prerequisites:
 
@@ -58,7 +58,7 @@ Cloud Developers perform some of the following:
 * [Cloud Concepts - Principles of cloud computing](https://docs.microsoft.com/en-us/learn/modules/fundamental-azure-concepts/)
 * [Foundations of cloud computing for developers](https://docs.microsoft.com/en-us/learn/modules/cmu-cloud-computing-overview/?WT.mc_id=udacity_learn-wwl)
 
-## Why Cloud Development Is Important
+## Why Cloud Development Is Important:
 
 You've probably worked with various cloud services before, such as Microsoft OneDrive and Google Docs, and of course, you'll be working with Microsoft Azure in this course.
 
@@ -83,7 +83,7 @@ Some of the disadvantages of cloud computing are:
 * [Economics of cloud computing](https://docs.microsoft.com/en-us/learn/modules/cmu-cloud-economics/)
 * [Predict costs and optimize spending for Azure](https://docs.microsoft.com/en-us/learn/modules/plan-manage-azure-costs/)
 
-## Business Stakeholders
+## Business Stakeholders:
 
 As a cloud developer, you will interact and engage with numerous stakeholders, each of whom has different priorities. Some of these are:
 
@@ -97,7 +97,7 @@ As a cloud developer, you will interact and engage with numerous stakeholders, e
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/7.jpg)
 
-## History of Cloud Development
+## History of Cloud Development:
 
 The roots of cloud computing go as far back as the 1960s.
 
@@ -127,7 +127,7 @@ The roots of cloud computing go as far back as the 1960s.
 
 So what’s next? Cloud computing is on the rise in this day and age. As cloud computing continues to become more mainstream, more and more companies are looking to adopt it. Industries such as marketing, education, and healthcare are beginning to increase their use of cloud-based services and platforms.
 
-## Microsoft Azure
+## Microsoft Azure:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/9.jpg)
 
@@ -160,7 +160,7 @@ The Azure products this course will focus on are:
 * [Align requirements with cloud types and service models in Azure](https://docs.microsoft.com/en-us/learn/modules/align-requirements-in-azure/?WT.mc_id=udacity_learn-wwl)
 * [Core Cloud Services - Azure architecture and service guarantees](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/)
 
-## The Azure Portal
+## The Azure Portal:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/11.jpg)
 
@@ -169,7 +169,7 @@ The Azure products this course will focus on are:
 ### Microsoft Learn Resources
 * [Core Cloud Services - Manage services with the Azure portal](https://docs.microsoft.com/en-us/learn/modules/tour-azure-portal/?WT.mc_id=udacity_learn-wwl)
 
-## IaaS, PaaS, and SaaS
+## IaaS, PaaS, and SaaS:
 
 In contrast to on-premises solutions, there are three types of services that Azure offers us:
 
@@ -180,7 +180,7 @@ In contrast to on-premises solutions, there are three types of services that Azu
 ![](https://video.udacity-data.com/topher/2020/July/5f10a86a_azure-service-level-comparison/azure-service-level-comparison.png)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/13.jpg)
 
-## Tools & Environment
+## Tools & Environment:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/14.jpg)
 
@@ -192,7 +192,7 @@ In contrast to on-premises solutions, there are three types of services that Azu
 * [Prepare your development environment for Azure development](https://docs.microsoft.com/en-us/learn/modules/prepare-your-dev-environment-for-azure-development/?WT.mc_id=udacity_learn-wwl)
 * [Implement a code workflow in your build pipeline by using Git and GitHub](https://docs.microsoft.com/en-us/learn/modules/implement-code-workflow/?WT.mc_id=udacity_learn-wwl)
 
-## Project: Deploy an Article CMS to Azure
+## Project: Deploy an Article CMS to Azure:
 
 It is exciting to take a look at what we will be creating in our <strong>final course project</strong>. Similar to many such systems that exist in the real world, we will be designing, building, and deploying an Article Content Management System (CMS), which will include the ability to :
 
@@ -207,7 +207,7 @@ All these terms may not make much sense to you yet, but by the end of the course
 
 ![](https://video.udacity-data.com/topher/2020/March/5e6f8ed6_article-cms/article-cms.png)
 
-## Lesson Recap
+## Lesson Recap:
 
 What did we learn in this introductory lesson on Azure Cloud Development?
 
@@ -218,7 +218,7 @@ What did we learn in this introductory lesson on Azure Cloud Development?
 * Tools and environment set up for the course
 * The final course project
 
-## Glosary
+## Glosary:
 
 * <strong>The Cloud</strong>	A collection of servers on the internet that store and manage data, run apps, and deliver content such as email or videos.
 * <strong>Cloud Computing</strong>	The delivery of software and storage over the Internet (i.e. the cloud).
@@ -234,11 +234,14 @@ What did we learn in this introductory lesson on Azure Cloud Development?
 * <strong>Platform as a Service (Paas)</strong>	Handles networking, provides middleware and development & database tools, in addition to the physical hardware provided at the IaaS level.
 * <strong>Software as a Service (Saas)</strong>	Provides end-users access to online cloud solutions, without the need to build or support the underlying applications themselves.
 
-_________________________________________________________________________________________________________________________________________________________________________________
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
 
 # LESSON 2 AZURE COMPUTE DEVICES
 
-## Introduction
+## Introduction:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/17.jpg)
 
@@ -251,7 +254,7 @@ In this lesson, we'll focus on Azure Compute Services:
 
 ![](https://video.udacity-data.com/topher/2020/July/5f10a6cb_course-outline-compute/course-outline-compute.png)
 
-## Big Picture: Compute Services
+## Big Picture: Compute Services:
 
 There are a lot of compute services available through Azure, each with their own use cases. You can check out a good chart for deciding when to use each (which you'll see more of in later lessons and courses) in the Microsoft documentation. Some of the available options are:
 
@@ -270,7 +273,7 @@ We'll focus on Virtual Machines and App Services in this lesson, although you'll
 ### Microsoft Learn Resources
 * [Core Cloud Services - Azure compute options](https://docs.microsoft.com/en-us/learn/modules/azure-compute-fundamentals/)
 
-## Subscriptions and Resource Groups
+## Subscriptions and Resource Groups:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/19.jpg)
 
@@ -323,7 +326,7 @@ Please open the link in a new tab to watch the tutorial:
 * [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/?WT.mc_id=udacity_learn-wwl)
 * [Create ARM templates](https://docs.microsoft.com/en-us/learn/modules/build-azure-vm-templates/?WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Create A Resource Group
+## Exercise: Create A Resource Group:
 
 In this exercise, you'll create a resource group in Azure. This is a quick exercise, but will set you up for success through the rest of the course!
 
@@ -331,7 +334,7 @@ In this exercise, you'll create a resource group in Azure. This is a quick exerc
 
 <strong>Note:</strong> We will use this resource group throughout the course, so do not delete it after creation. Resource Groups are fully covered in the Azure free account.
 
-## Solution (Alternative Solution using the CLI)
+## Solution (Alternative Solution using the CLI):
 
 Please open the link in a new tab to watch the tutorial:
 
@@ -361,7 +364,7 @@ Please open the link in a new tab to watch the tutorial:
 
 [![IMAGE ALT TEXT](https://video.udacity-data.com/topher/2020/July/5f075271_resource-group-solution/resource-group-solution.png)](https://www.youtube.com/watch?v=rmWRvxY0Hh8&feature=emb_logo)
 
-## Virtual Machines vs. App Services
+## Virtual Machines vs. App Services:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/30.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/31.jpg)
@@ -411,7 +414,7 @@ Each of these has their own use cases, although sometimes there is still some am
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/37.jpg)
 
-## Exercise: Virtual Machines vs. App Services
+## Exercise: Virtual Machines vs. App Services:
 
 ### Virtual Machines vs. App Services
 For each of the three scenarios below, analyze and determine whether a virtual machine or an app service would be best served for the situation. It's important to note that this involves some level of ambiguity - you should feel free to expand beyond the given scenario and consider any other areas that might be important in making your decision.
@@ -443,7 +446,7 @@ You can use this space as a scratchpad of your thoughts on Scenario 3. Note that
 ### Your reflection
 * App Services
 
-## Solution: Virtual Machines vs. App Services
+## Solution: Virtual Machines vs. App Services:
 
 ### Scenario 1
 >>Your company wants to deploy a series of lightweight APIs as part of their plan to shift to using microservices in the future. The company is very cost-conscious due to the >>current economic environment, and wants to focus on using the correct services right now, and is less concerned about scaling concerns due to stagnant growth.
@@ -481,7 +484,7 @@ Some key points that stood out to me were:
 
 The answer here depends greatly on which of the above points you highlight. In the current situation, an App Service likely works fine - it can scale vertically to meet different demand levels, and the compute resources needed are well within App Service limits. However, there's some consideration that Virtual Machines may be necessary in the near future if many more features are added, or demand changes in a way that requires vertical scaling. In fact, I'd argue that the problem so far is a bit ill-defined - I'd want to know what level of control we need over the underlying OS, security requirements we have, etc.
 
-## Creating a Virtual Machine
+## Creating a Virtual Machine:
 
 Please open the link in a new tab to follow the tutorial:
 
@@ -622,7 +625,7 @@ You've gone through all the steps for creating a Virtual Machine and deploying a
 * [Create a Linux virtual machine in Azure](https://docs.microsoft.com/en-us/learn/modules/create-linux-virtual-machine-in-azure/?WT.mc_id=udacity_learn-wwl)
 * [Deploy a website with Azure virtual machines](https://docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-virtual-machines/?WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Creating a Virtual Machine
+## Exercise: Creating a Virtual Machine:
 
 ### Create a Linux Virtual Machine
 In this exercise, you'll create and connect to a Linux Virtual Machine in Azure.
@@ -676,7 +679,7 @@ Once you're done with the exercise, be sure to delete the VM and it's resources 
 ### Supporting Materials
 [create-vm-starter.zip](https://video.udacity-data.com/topher/2020/July/5f1875e2_create-vm-starter/create-vm-starter.zip)
 
-## Solution: Creating a Virtual Machine
+## Solution: Creating a Virtual Machine:
 
 Please open the link in a new tab to watch the tutorial:
 
@@ -770,7 +773,7 @@ If we no longer need a resource, we can delete them through the portal. The quic
 
 ```az group delete -n resource-group-west```
 
-## Creating an App Service
+## Creating an App Service:
 
 Please open the link in a new tab to watch the tutorial:
 
@@ -823,7 +826,7 @@ If we no longer need a resource, we can delete them through the portal.
 * [Manage an App Service plan in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage?WT.mc_id=udacity_learn-wwl)
 * [Deploy a website to Azure with Azure App Service](https:/)/docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Creating an App Service
+## Exercise: Creating an App Service:.
 
 ### Create and Deploy an App Service Web App
 In this exercise, you'll create and deploy an app service web app.
@@ -856,7 +859,7 @@ It’s finally time to deploy some code to Azure! Download the web app code prov
 ### Supporting Materials
 [create-app-service-starter.zip](https://video.udacity-data.com/topher/2020/July/5f18767d_create-app-service-starter/create-app-service-starter.zip)
 
-## Solution: Creating an App Service
+## Solution: Creating an App Service:
 
 Please open the video in a new tab to watch the tutorial:
 
@@ -919,7 +922,7 @@ You've built a web app, and deployed it with az webapp up, but seem to be gettin
 
 * Add the related library to requirements.txt and update the deployed app
 
-## Lesson Conclusion
+## Lesson Conclusion:
 
 In this lesson, we focused on Azure Compute Services:
 
@@ -956,11 +959,15 @@ In this lesson, we focused on Azure Compute Services:
 
 <strong>Azure Kubernetes Service (AKS)</strong> Microsoft's own platform for hosting and managing Kubernetes, including deploying docker containers into clusters (covered in a later course).
 
+
+
 ________________________________________________________________________________________________________________________________________________________________________________
+
+
 
 # LEESON 3 AZURE STORAGE
 
-## Introduction
+## Introduction:
 
 In this lesson, you will:
 
@@ -970,7 +977,7 @@ In this lesson, you will:
 
 ![](https://video.udacity-data.com/topher/2020/July/5f10a6f7_course-outline-storage/course-outline-storage.png)
 
-# Big Picture: Storage
+## Big Picture: Storage:
 
 Some of the benefits of using Azure for storage are:
 
@@ -1007,7 +1014,7 @@ True or False: My app will only ever use one type of storage.
 
 * False
 
-## Azure SQL Databases
+## Azure SQL Databases:
 
 * Azure SQL databases are used for structured, relational data.
 * In Azure, you also need to first create a related SQL server to hold the database, although you can create multiple SQL databases under a single SQL server.
@@ -1043,7 +1050,7 @@ Azure SQL Databases can be left up on the basic tier for no cost forever.
 * [Provision an Azure SQL database to store application data](https://docs.microsoft.com/en-us/learn/modules/provision-azure-sql-db/?WT.mc_id=udacity_learn-wwl)
 * [Create an Azure Database for PostgreSQL server](https://docs.microsoft.com/en-us/learn/modules/intro-to-postgres/)
 
-## Adding Data to the Database
+## Adding Data to the Database:
 
 Please watch the video in a new tab to watch the tutorial:
 
@@ -1065,7 +1072,7 @@ Which of the following would be appropriate data to store in a SQL database?
 * Information about books like author, title, year published, and summary
 * Sales invoices, such as id, price, and item quantities
 
-## Exercise: Azure SQL Databases
+## Exercise: Azure SQL Databases:
 
 ### Exercise: Azure SQL Databases
 In this exercise, you will create an Azure SQL Database and add data to it. In a later exercise, you will connect an app to the database, so that you can both get and post data from the app into the database.
@@ -1078,7 +1085,7 @@ In this exercise, you will create an Azure SQL Database and add data to it. In a
 ### Supporting Materials
 [sql-scripts.zip](https://video.udacity-data.com/topher/2020/July/5f075d26_sql-scripts/sql-scripts.zip)
 
-## Solution: Azure SQL Databases
+## Solution: Azure SQL Databases:
 
 Please open the video in a new tab to watch the tutorial:
 
@@ -1170,7 +1177,7 @@ az sql server delete \
 --resource-group resource-group-west \
 --verbose
 ```
-## Blob Storage
+## Blob Storage:
 
 Before discussing Blob Storage Accounts, you may need to know what a <strong>Blob</strong> is in the first place.
 
@@ -1199,7 +1206,7 @@ Blob storage offers a rule-based policy you can use to transition your data betw
 True or False: Blob Storage and SQL Databases can be used interchangeably.
 False
 
-## Creating Blob Storage in the Portal
+## Creating Blob Storage in the Portal:
 
 Please open the video in a new tab to watch the tutorial:
 
@@ -1255,7 +1262,7 @@ You are trying to pull in some images from blob storage into your app, but have 
 * [Move items in Blob storage between storage accounts or containers](https://docs.microsoft.com/en-us/learn/modules/copy-blobs-from-command-line-and-code/?WT.mc_id=udacity_learn-wwl)
 * [Blob Storage lifecycle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal&WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Blob Storage
+## Exercise: Blob Storage:
 
 In this exercise, you will create a Storage Account with a Blob Container capable of storing images. In a later exercise, you will connect an app to the container, so that you can both get and post images from the app into the container.
 
@@ -1297,7 +1304,7 @@ You can go to the portal to check that the storage account and container have be
 
 Lastly, I also showed you how to set up a new lifecycle management rule for an alert, which can be found under "Blob Service" within your Storage Account, under "Lifecycle Management".
 
-## Connecting Your App to Storage
+## Connecting Your App to Storage:
 
 Please open the video in a new tab to watch the tutorial:
 
@@ -1372,7 +1379,7 @@ You create a book app showing book names, authors and front covers. You successf
 * [Connect an app to Azure Storage](https://docs.microsoft.com/en-us/learn/modules/connect-an-app-to-azure-storage/?WT.mc_id=udacity_learn-wwl)
 * [Store application data with Azure Blob storage](https://docs.microsoft.com/en-us/learn/modules/store-app-data-with-azure-blob-storage/?WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Connecting Your App to Storage
+## Exercise: Connecting Your App to Storage:
 
 In this exercise, you'll be given an application for a virtual zoo, and asked to add connections to your earlier deployed SQL database and Blob Storage to populate the zoo application.
 
@@ -1401,7 +1408,7 @@ While it's not a required part of this exercise, you can also try to deploy the 
 ### Supporting Materials
 [connect-app-to-storage-starter.zip](https://video.udacity-data.com/topher/2020/July/5f188996_connect-app-to-storage-starter/connect-app-to-storage-starter.zip)
   
- ## Solution: Connecting Your App to Storage
+## Solution: Connecting Your App to Storage:
  
  Please open the video in a new tab to watch the tutorial:
 
@@ -1439,7 +1446,7 @@ You might be wondering why a random filename was chosen for our blob upload. Wel
 
 Even outside of a friendly joke, it's quite likely as your app scales up to thousands (and hopefully millions!) of users, they will be uploading files with the same names as others, if you don't randomize them. With unique, random filenames, you won't have to worry about this issue.
 
-## Lesson Conclusion
+## Lesson Conclusion:
 
 In this lesson, you:
 
@@ -1447,7 +1454,7 @@ In this lesson, you:
 * Took a deep dive on Azure SQL Databases and Blob Storage, including creating the related resources and uploading data
 * Connected those storage services to your app
 
-## Glossary
+## Glossary:
 
 ### Key Term                    Definition
 <strong>Azure SQL Server</strong>	Azure SQL Databases must first have a SQL Server on which the database will be created. Multiple databases can be created on a single server.
@@ -1481,12 +1488,15 @@ In this lesson, you:
 <strong>CosmosDB</strong>	Azure's non-relational database service, capable of using different non-relational databases like MongoDB and Cassandra (covered in a later course).
 
 <strong>Retention</strong>	How long to store a given piece of data or file for, such as 30 days.
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# LESSON 4 SECURITY AND MONITORING BASICS 
  
- _______________________________________________________________________________________________________________________________________________________________________________
- 
- # LESSON 4 SECURITY AND MONITORING BASICS 
- 
- ## Introduction 
+ ## Introduction:
  
  In this lesson, you'll:
 
@@ -1499,7 +1509,7 @@ Once again, this could be a course of its own, so we'll also provide a lot of ad
  
  ![](https://video.udacity-data.com/topher/2020/July/5f10a70f_course-outline-security-monitor/course-outline-security-monitor.png)
  
- ## Security Responsibilities 
+ ## Security Responsibilities: 
  
 Just like we saw early on in the course with technology stack differences between on-premises, IaaS, PaaS and SaaS, security responsibilities also differ among these service types. For the cloud developer, on-premises still puts all security responsibilities onto them. With IaaS, the security of physical hardware shifts to the cloud provider. With PaaS, the operating system security shifts to be the responsibility of the cloud provider, while network, application and identity security are a shared responsibility. With SaaS, the network and application shift responsibility to the cloud provider, but identity stays as a shared responsibility.
 
@@ -1519,7 +1529,7 @@ It's important to note here that some security responsibilities always stay with
 * [Use a framework to identify threats and find ways to reduce or eliminate risk](https://docs.microsoft.com/en-us/learn/modules/tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk/?WT.mc_id=udacity_learn-wwl)
 * [Prioritize your issues and apply security controls](https://docs.microsoft.com/en-us/learn/modules/tm-prioritize-your-issues-and-apply-security-controls/?WT.mc_id=udacity_learn-wwl)
  
- ## Security Options in Azure
+ ## Security Options in Azure:
  
  ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/56.jpg)
  
@@ -1548,7 +1558,7 @@ Your company is developing a new app on Azure, and developers under the project 
 ### Microsoft Learn Resources
 * [Learning Path: Manage security operations in Azure](https://docs.microsoft.com/en-us/learn/paths/manage-security-operations/?WT.mc_id=udacity_learn-wwl)
 
-## Case Study: Security Best Practices in Azure
+## Case Study: Security Best Practices in Azure:
 
 ### Case Study: Security Best Practices
 
@@ -1598,7 +1608,7 @@ Your app service is running version 0.12.1 of a Python library, while the latest
 
 * Monitor the security state of your App Service environments.
 
-## Azure Active Directory
+## Azure Active Directory:
 
 Please open the link in a new tab to watch the tutorial:
 
@@ -1634,7 +1644,7 @@ You created a web app and have deployed it as a live website, with a requirement
 * [Enable secure access to apps for external users with Azure AD B2C](https://docs.microsoft.com/en-us/learn/modules/enable-external-access-with-b2c/?WT.mc_id=udacity_learn-wwl)
 * [Monitor and report on security events in Azure AD](https://docs.microsoft.com/en-us/learn/modules/monitor-report-aad-security-events/?WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Azure Active Directory
+## Exercise: Azure Active Directory:
 
 This exercise will get you familiar with registering an app in Azure Active Directory, which will set you up for the next exercise to use Microsoft Authentication.
 
@@ -1646,7 +1656,7 @@ This exercise will get you familiar with registering an app in Azure Active Dire
 * 5. Copy down the "Application (client) ID", which will be used in the next exercise.
 * 6. Create and copy down a client secret key, which will be used in the next exercise.
 
-## Solution: Azure Active Directory
+## Solution: Azure Active Directory:
 
 This is the same process as before, so we'll skip the video this time through.
 
@@ -1661,7 +1671,7 @@ This is the same process as before, so we'll skip the video this time through.
 * 5. After you click "Register", copy down the "Application (client) ID", as you'll need that for the next exercise.
 * 6. Additionally, under "Manage", click "Certificates & secrets", then "+ New client secret", then enter a description (you can decide on your own desired expiration time). Copy down string under "Value", and make sure you store it somewhere safe.
 
-## OAuth2 with MSAL Part 1
+## OAuth2 with MSAL Part 1:
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/59.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/60.jpg)
@@ -1693,7 +1703,7 @@ You can also find the complete workflow in [Microsoft's documentation.](https://
 
 ![](https://video.udacity-data.com/topher/2020/July/5f10b619_msal-oauth-process/msal-oauth-process.png)
 
-## OAuth2 with MSAL Part 2
+## OAuth2 with MSAL Part 2:
 
 ### MSAL in Code
 
@@ -1763,7 +1773,7 @@ While KeyVault API, Managed Identities, Shared Access Signatures, and Role-Based
 * [Create and implement shared access signatures](https://docs.microsoft.com/en-us/learn/modules/control-access-to-azure-storage-with-sas/)
 * [Control access to resources by using role-based access controls (RBAC)](https://docs.microsoft.com/en-us/learn/modules/secure-azure-resources-with-rbac/)
 
-## Exercise: OAuth2 with MSAL
+## Exercise: OAuth2 with MSAL:
 
 This exercise will help you get familiar with integrating the Microsoft Authentication Library, or ```msal```, into an application. In the previous exercise, you registered an app with Azure Active Directory, and you'll use some of the information from there so that authentication can occur.
 
@@ -1789,7 +1799,7 @@ Together, the above four steps should allow you to have a functional "Sign in wi
 ### Supporting Materials
 [oauth-msal-starter.zip](https://video.udacity-data.com/topher/2020/July/5f075c1e_oauth-msal-starter/oauth-msal-starter.zip)
 
-## Solution: OAuth2 with MSAL
+## Solution: OAuth2 with MSAL:
 
 Please open the link in a new tab to watch the tutorial:
 
@@ -1860,7 +1870,7 @@ In order for this ```_scheme``` setting to work, ```_external``` must also be se
 ### Handle MSAL Exceptions and Errors
 This [article](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-error-handling-dotnet?tabs=python) gives an overview of the different types of errors and recommendations for handling common sign-in errors.
 
-## Monitoring and Logging in Azure
+## Monitoring and Logging in Azure:
 
 Please open the link in a new tab to watch the tutorial:
 
@@ -1905,7 +1915,7 @@ Check out the documentation in the resources below if you need some more backgro
 * [Monitor apps in Azure App Service](https://docs.microsoft.com/es-es/azure/app-service/web-sites-monitor?WT.mc_id=udacity_learn-wwl)
 * [Implement code that handles transient faults](https://docs.microsoft.com/es-es/azure/architecture/best-practices/transient-faults?WT.mc_id=udacity_learn-wwl)
 
-## Exercise: Monitoring and Logging in Azure
+## Exercise: Monitoring and Logging in Azure:
 
 ### Exercise: Monitoring & Logging
 
@@ -1944,7 +1954,7 @@ az webapp up \
 ### Supporting Materials
 [monitor-log-starter.zip](https://video.udacity-data.com/topher/2020/July/5f075c72_monitor-log-starter/monitor-log-starter.zip)
 
-## Solution: Monitoring and Logging in Azure
+## Solution: Monitoring and Logging in Azure:
 
 There's a few parts to this exercise, so let's step through each of them.
 
@@ -1992,6 +2002,207 @@ az webapp up \
 ``` 
  
 ### Sending Logs to Storage
+
+Please open the link in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=iOe3OsNeziw&t=11s)
+
+<strong>Note:</strong> I should be using console logs when setting up my alert, not app logs.
+
+* 1. To prepare for sending logs to storage, I first went and created a new storage account in the portal. This can just be standard performance, StorageV2, with cool access tier (you would likely be better served with hot access in an app with substantial logging needs). I used the defaults for everything else.
+
+* 2. If the app is deployed, head to the app URL and press a few buttons. Back in the App Service page in the portal, find the "Log stream" under "Monitoring", and confirm that your button presses are in fact showing up in the Log stream.
+
+* 3. Next, click on "Diagnostic settings", also under "Monitoring", then "Add diagnostic setting". Give it a name, then under "log", click "AppServiceConsoleLogs", then under "Destination details", click "Archive to a storage account". You can change the "Retention (days)" that has appeared on the left if you want; the default of "0" will be indefinite retention. Then click "Save". It will take about ten minutes for this to begin populating.
+
+### Adding Alerts
+
+Please open the link in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=aYHVNPTRGVE&t=4s)
+
+* 1. Go back to your App Service, and click on "Alerts" under "Monitoring", then "+ New alert rule". The scope should just be your app.
+
+* 2. Under "Condition", click "Select condition", then find the "Signal name" ```Requests```, and click on it. Scroll down to "Alert logic", and change the "Aggregation Type" to ```Count```, then put ```20``` in the "count" box (this is set low on purpose). Finally, set the "Aggregation granularity" to 15 minutes to make sure you will activate the alert, and click "Done".
+
+* 3. Under "Action group", click "Select action group", and then "+ Create action group". Give it an "Action group name", "Short name", then make sure to select the same Resource group as your app is in for easier deletion later on. Give the "Action name" something descriptive, such as ```20 Requests in 15 minutes```. Then, for "Action Type", select "Email/SMS message/Push/Voice". In the new window, click on "Email" and enter your own email, then click "OK" at the bottom of this side window, then "OK" at the bottom of the main window for adding the action group.
+
+* 4. Lastly, add an alert rule name and description. You can change the severity of the alert if you wish. Make sure the final box for "Enable alert rule upon creation" is checked. Finally, click the "Create alert rule" button. Once again, this will take about 10 minutes to activate.
+
+### Quotas & Checking on Logs and Alerts
+
+Please open the link in a new tab to watch the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/38.jpg)](https://www.youtube.com/watch?v=goNwVw7VRbQ&t=24s)
+
+### Considering quotas:
+
+* 1. While waiting for the previous two stages to be ready, navigate back to your App Service, and find the "App Service plan" header, then click on "Quotas". On mine, under the free tier, I notice I have 60 minutes of CPU time for the day, and 330 MB (I accidentally say 165 MB in the video) of data out (along with one for shorter CPU time, and another for memory usage).
+
+* 2. While not required to add the actual alerts for these, it's important to consider how you might approach doing so. If I go back to Alerts and check out the different conditions, I notice that CPU Time and Data Out are both two other Metrics I could make an alert based on. For CPU Time, perhaps I could consider setting an alert for 15 minutes total used (900 seconds) within a six hour aggregation period. If this is triggered, maintained activity at that level would cause the CPU time quota to be exceeded, leading to the app being stopped.
+
+* 3. There are plenty of more ways to address these quotas through alerts, but that is just one example.
+
+### Checking that log storage and alerts were appropriately created:
+
+* 1. If it's been 10 minutes, first navigate back to your app URL and click the buttons each a handful of times, to make sure you have some new logging information, as well as hitting a decent number of requests to trigger the alert email. You can check the "Metrics" page under "Monitoring" for your App Service, and select the "Requests" metric (it updates once every five minutes) to confirm you are actually sending enough requests, or you could also manually count from the Log stream.
+
+* 2. To check log storage is appropriately configured, go back to the storage account you created earlier, and look at its containers. If it hasn't been ten minutes yet, the logs may not have appeared yet. If a container was created, click on it, then dive down into the directories until you get to the json logs. Download the log, and confirm it shows some of your various logging from the app.
+
+* 3. To check that the alert has appropriately occurred (make sure you have actually met the trigger criteria), just check your email. Note that you will have received a first email just for joining the action group.
+
+![](https://video.udacity-data.com/topher/2020/July/5f075cbd_alert-email/alert-email.png)
+
+## Lesson Conclusion:
+
+In this lesson, you:
+
+* Differentiated the security responsibilities between cloud developers and the cloud provider
+* Discovered the various security options available in Azure
+* Got hands-on with Azure Active Directory, OAuth 2.0, and the Microsoft Authentication Library (MSAL)
+* Added monitoring and logging into your Azure applications, including storing logs and activating alerts
+
+There is a ton to learn in the areas of Security and Monitoring in Azure, so make sure to check out some of the links throughout the lesson if you want to dive even deeper!
+
+## Glossary:
+
+### Key Term          Definition
+<strong>Azure Active Directory</strong>	Provides single sign-on and multi-factor authentication capabilities, such as Sign in with Microsoft.
+
+<strong>Tenant</strong>	Typically equivalent to an organization in Azure AD, although you can set up additional tenants as necessary.
+
+<strong>OAuth2</strong>	The industry-standard protocol for authorization. Instead of creating apps that each maintain their username and password information, apps can delegate that responsibility to a centralized identity provider.
+
+<strong>Microsoft Authentication Library</strong>	A Python library used in conjunction with Azure AD to utilize Microsoft single sign-on capabilities in Python apps. Abbreviated as "MSAL".
+
+<strong>App Configuration</strong>	Stores application settings in one secure location.
+
+<strong>KeyVault API</strong>	Stores application keys and secrets in one secure location.
+
+<strong>Managed Identities</strong>	A part of Azure Active Directory; this helps streamline providing an app or app user access to other Azure resources.
+
+<strong>Shared Access Signatures</strong>	Give external parties certain limited access (determined by you) to different Azure resources.
+
+<strong>Role-Based Access Controls (RBAC)</strong>	Help internally manage who has access to what resources, and what they can do to said resources.
+
+<strong>Transient Faults</strong>	The loss of network connectivity, service unavailability, or other timeouts; your cloud applications should appropriately handle these.
+
+<strong>Azure Monitor</strong>	Provides a wide range of monitoring services such as log analytics, metrics, alerts, and much more.
+
+<strong>Application Insights</strong>	Part of Azure Monitor; This helps monitor performance and other key metrics.
+
+<strong>Authentication</strong>	The process of checking if the user is who they say they are.
+
+<strong>Authorization</strong>	The process of checking if the user is allowed to access data, and what they can do with that data.
+
+## Course Recap:
+
+Congratulations on reaching the end of this course on Azure Applications! You should be proud of all of the skills you've built these past few weeks:
+
+* Creating and deploying virtual machines and app services
+* Setting up cloud storage services, such as Azure SQL Databases and Blob Storage, and connecting them to an app
+* Adding OAuth 2.0 capabilities with the Microsoft Authentication Library and Azure Active Directory to your app
+* Implementing monitoring and logging solutions
+
+Next up, you'll combine all of these new skills into your final course project - building and deploying an Article CMS with Azure. Best of luck, and have fun!
+
+![](https://video.udacity-data.com/topher/2020/July/5f04bb0d_azure-dev-c1-course-outline/azure-dev-c1-course-outline.png)
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+# LESSON 5 PROJECT (OPTIONAL): DEPLOY AND ARTICLE CMS TO AZURE
+
+## Project Overview:
+
+In this project, you'll be given a simple Content Management System (CMS) for articles, where a user can log in, view published articles, and publish new articles. An article consists of a title, author, and body of text (to be stored in an Azure SQL Server) along with an image (to be stored in Azure Blob Storage).
+
+The CMS includes the following components:
+
+* A webapp using Python with the Flask framework.
+* A SQL database that contains a user table and an article table for the webapp to query.
+* A Blob Storage container where images are stored.
+
+It will be up to you to create and manage the resources necessary to fully deploy both the necessary storage and compute resources for the app to Azure. As part of the project, you'll also need to analyze which resource best fits for app deployment between a VM or App Service. Lastly, you'll add in an authentication option to Sign in with Microsoft, as well as logging for successful and unsuccessful logins.
+
+### App Example
+Below is a screenshot from the Python Web Application, viewing an article that was created successfully.
+
+![](https://video.udacity-data.com/topher/2020/March/5e6f8ed6_article-cms/article-cms.png)
+
+## Instructions:
+
+### Project Instructions
+
+First, take a look at the [project rubric](https://review.udacity.com/#!/rubrics/2850/view), which will be used to grade your submission. Then, get the starter code from [this repository](https://github.com/udacity/nd081-c1-provisioning-microsoft-azure-vms-project-starter).
+
+You are expected to do the following to complete this project:
+
+* 1. Create a Resource Group in Azure.
+
+* 2. Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
+
+>> * Provide a screenshot of the populated tables as detailed further below.
+
+* 3. Create a Storage Container in Azure for ```images``` to be stored in a container.
+
+>> * Provide a screenshot of the storage endpoint URL as detailed further below.
+
+* 4. Add functionality to the Sign In With Microsoft button.
+
+>> * This will require completing TODOs in ```views.py``` with the ```msal``` library, along with appropriate registration in Azure Active Directory.
+
+* 5. Choose to use either a VM or App Service to deploy the FlaskWebProject to Azure. Complete the analysis template in ```WRITEUP.md``` (or include in the README) to compare the two options, as well as detail your reasoning behind choosing one or the other. Once you have made your choice, go through with deployment.
+
+* 6. Add logging for whether users successfully or unsuccessfully logged in.
+
+>> * This will require completing TODOs in ```__init__.py```, as well as adding logging where desired in ```views.py```.
+
+* 7. To prove that the application in on Azure and working, go to the URL of your deployed app, log in using the credentials in this README, click the Create button, and create an article with the following data:
+
+>> * Title: "Hello World!"
+>> * Author: "Jane Doe"
+>> * Body: "My name is Jane Doe and this is my first article!"
+>> * Upload an image of your choice. Must be either a .png or .jpg. After saving, click back on the article you created and provide a screenshot proving that it was created successfully. Please also make sure the URL is present in the screenshot.
+
+* 8. Log into the Azure Portal, go to your Resource Group, and provide a screenshot including all of the resources that were created to complete this project. (see sample screenshot in "example_images" folder)
+
+* 9. Take a screenshot of the Redirect URIs entered for your registered app, related to the MS Login button.
+
+* 10. Take a screenshot of your logs (can be from the Log stream in Azure) showing logging from an attempt to sign in with an invalid login, as well as a valid login.
+
+![](https://video.udacity-data.com/topher/2020/May/5ed0057a_sample-azure-portal-resource-group/sample-azure-portal-resource-group.png)
+
+### Submission
+Your submission must include the following, as according to the [project rubric](https://review.udacity.com/#!/rubrics/2850/view):
+
+* 1. A screenshot of an article created in the Article CMS on Azure. The screenshot must also include the URL. The article should have the following fields set:
+>> * Title: "Hello World!"
+>> * Author: "Jane Doe"
+>> * Body: "My name is Jane Doe and this is my first article!"
+>> * An image of your choice. It must be either a .png or .jpg.
+
+* 2. A screenshot of the resource group from the Azure Portal including all of the resources that were created to complete this project. (see sample screenshot above).
+
+* 3. A screenshot showing the created tables and one query of data from the initial scripts in the SQL database (see example in the project repository).
+
+* 4. A screenshot showing an example of blob endpoints for where images are sent for storage (see example in project repository).
+
+* 5. A screenshot of the redirect URIs related to Microsoft authentication (see example in the project repository).
+
+* 6. A screenshot showing one potential form of logging with an "Invalid login attempt" and "admin logged in successfully", taken from the app's Log stream or other logs you create and store (see example in project repository). You can customize your log messages as you see fit for these situations.
+
+* 7. Your application code—most importantly ```__init__.py``` and ```views.py``` since they will contain your updates for Auth and Logging.
+
+* 8. Your ```WRITEUP.md``` file analyzing and explaining your choice between a VM or App Service.
+
+* 9. OPTIONAL: A URL to your Python App Service.
+
+### Cleaning Up
+### IMPORTANT:
+
+Please make sure to cleanup your resource group in Azure after receiving your grade for this course to avoid being billed for any running services when your free account with Azure expires.
 
 
 
