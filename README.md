@@ -1894,7 +1894,14 @@ Check out the documentation in the resources below if you need some more backgro
 * [Standard Python Logging Library](https://docs.python.org/3/library/logging.html) (Flask logging is a logger object from this library)
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/63.jpg)
-![](
+![](https://raw.githubusercontent.com/ARBUCHELI/BERTELSMANN-SCHOLARSHIP---INTRODUCTION-TO-AZURE-APPLICATIONS-NANODEGREE-PROGRAM/main/Images/64.jpg)
+
+### Microsoft Learn Resources
+* [Analyze your Azure infrastructure by using Azure Monitor logs](https://docs.microsoft.com/es-es/learn/modules/analyze-infrastructure-with-azure-monitor-logs/?WT.mc_id=udacity_learn-wwl)
+* [Monitor apps in Azure App Service](https://docs.microsoft.com/es-es/azure/app-service/web-sites-monitor?WT.mc_id=udacity_learn-wwl)
+* [Implement code that handles transient faults](https://docs.microsoft.com/es-es/azure/architecture/best-practices/transient-faults?WT.mc_id=udacity_learn-wwl)
+
+
 
 ________________________________________________________________________________________________________________________________________________________________________________
 # GLOSSARY 
