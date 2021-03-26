@@ -1,6 +1,6 @@
-# CLOUD DEVELOPER USING MICROSOFT AZURE NANODEGREE
+# DEVELOPER FOR MICROSOFT AZURE NANODEGREE
 
-## This repository contains the lessons and quizzes from Cloud Developer Using Microsoft Azure Nanodegree Program.
+## This repository contains the lessons and quizzes from Developer for Microsoft Azure Nanodegree Program.
 
 ## The first part corresponds to the material provided during the first phase of the scholarship.
 
