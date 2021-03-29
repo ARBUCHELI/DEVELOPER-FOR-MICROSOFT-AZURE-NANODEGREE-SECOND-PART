@@ -4,6 +4,8 @@
 
 ## The first part corresponds to the material provided during the first phase of the scholarship.
 
+# I. AZURE APPLICATIONS
+
 # LESSON 1 INTRODUCTION TO MICROSOFT AZURE DEVELOPMENT
 
 ## Prerequisites:
