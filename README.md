@@ -1,4 +1,4 @@
-# DEVELOPER FOR MICROSOFT AZURE NANODEGREE
+# DEVELOPER FOR MICROSOFT AZURE NANODEGREE SECOND PART
 
 ## This repository contains the lessons and quizzes from Developer for Microsoft Azure Nanodegree Program.
 
