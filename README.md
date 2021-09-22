@@ -1,6 +1,6 @@
 # DEVELOPER FOR MICROSOFT AZURE NANODEGREE SECOND PART
 
-## This repository contains the lessons and quizzes from Developer for Microsoft Azure Nanodegree Program.
+## This repository contains the solutions of the lessons and quizzes of the Developer for Microsoft Azure Nanodegree Program.
 
 ## The first part corresponds to the material provided during the first phase of the scholarship.
 
